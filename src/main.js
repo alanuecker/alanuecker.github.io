@@ -6,8 +6,7 @@ import Buefy from 'buefy'
 import App from './App'
 import router from './router'
 // import css files
-import './assets/css/normalize.css'
-import './assets/css/skeleton.css'
+import './assets/css/custom.css'
 
 Vue.config.productionTip = false
 

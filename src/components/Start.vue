@@ -1,21 +1,16 @@
 <template>
   <div class="start">
-    <entry msg="test"></entry>
+    <appbar></appbar>
   </div>
 </template>
 
 <script>
-import Entry from '@/components/Entry'
+  import Appbar from '@/components/Appbar'
 
-export default {
-  name: 'start',
-  components: {
-    Entry
-  },
-  data () {
-    return {
-      msg: 'Welcome'
+  export default {
+    name: 'start',
+    components: {
+      Appbar
     }
   }
-}
 </script>
