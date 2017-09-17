@@ -1,5 +1,5 @@
 <template>
-  <a class="appbar-item mui--appbar-height mui--text-light" v-bind:href="href">{{text}}</a>
+  <a class="mui--appbar-height mui--text-light" :href="href">{{text}}</a>
 </template>
 
 <script>
