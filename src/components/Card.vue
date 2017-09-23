@@ -1,16 +1,18 @@
 <template>
-  <div class="card" :style="{'background-image':'url(' + src + ')'}">
-    <div>
-      <span>{{title}}</span>
-      <span>{{year}}</span>
+  <div class="card">
+    <div class="card-image" :style="{'background-image':'url(' + src + ')'}">
+      <card-info :title="title" :year="year"></card-info>
     </div>
   </div>
 </template>
 
 <script>
-
+import CardInfo from '@/components/CardInfo'
 export default {
   name: 'card',
+  components: {
+    CardInfo
+  },
   props: {
     title: String,
     year: String,
@@ -20,8 +22,18 @@ export default {
 </script>
 
 <style scoped>
-  .card {
-    background-size: cover;
-    background-position: center;
-  }
+.card {
+  display: flex;
+  min-height: 256px;
+}
+
+.card-image {
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-clip: content-box;
+}
 </style>
