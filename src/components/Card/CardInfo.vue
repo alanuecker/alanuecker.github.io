@@ -1,14 +1,17 @@
 <template>
   <div class="card-info">
-    <span>{{title}}</span>
-    <span>{{year}}</span>
+    <card-text :text="title"></card-text>
+    <card-text :text="year"></card-text>
   </div>
 </template>
 
 <script>
-
+import CardText from '@/components/Card/CardInfoText'
 export default {
   name: 'card',
+  components: {
+    CardText
+  },
   props: {
     title: String,
     year: String
@@ -19,14 +22,12 @@ export default {
 <style scoped>
 .card-info {
   display: flex;
-  flex: 1 0 auto;
-  line-height: 16px;
+  flex: 1 1 auto;
   padding: 16px;
   align-items: center;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 500;
   background-color: rgba(0, 0, 0, 0.38);
   justify-content: space-between;
-  font-size: 16px;
+  flex-wrap: wrap;
+  min-width: 0;
 }
 </style>

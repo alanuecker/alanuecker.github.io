@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import CardInfo from '@/components/CardInfo'
+import CardInfo from '@/components/Card/CardInfo'
 export default {
   name: 'card',
   components: {
@@ -30,7 +30,7 @@ export default {
 .card-image {
   display: flex;
   align-items: flex-end;
-  padding: 16px;
+  padding: 8px;
   width: 100%;
   background-size: cover;
   background-position: center;
