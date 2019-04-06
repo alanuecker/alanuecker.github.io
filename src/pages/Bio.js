@@ -1,9 +1,7 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
 
-import H1 from '../components/base/H1';
-import Body from '../components/base/Body';
-import Link from '../components/base/Link';
+import SubHeader from '../components/base/SubHeader';
 
 const Root = styled.div`
   display: grid;
@@ -11,8 +9,7 @@ const Root = styled.div`
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: 'left content right';
   font-size: 1rem;
-  padding: 2rem 1rem 0;
-  background-color: #d6ced5;
+  margin: 0 2rem;
 `;
 
 const Container = styled.div`
@@ -22,31 +19,14 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const BodyLink = styled(Link)`
-  font-size: 0.875rem;
-`;
-
 const Bio = () => {
   return (
-    <Root id="bio">
-      <Container>
-        <H1>Bio</H1>
-        <Body>Lives and works in Cologne, Germany.</Body>
-        <H1>Links</H1>
-        <p>
-          <BodyLink to="mailto:uecker.alan@gmail.com">uecker.alan@gmail.com</BodyLink>
-          <br />
-          <br />
-          <BodyLink to="https://github.com/alanuecker">github</BodyLink>
-          <br />
-          <br />
-          <BodyLink to="https://twitter.com/_AlanUecker">twitter</BodyLink>
-          <br />
-          <br />
-          <BodyLink to="linkedin.com/in/alan-uecker">linkedin</BodyLink>
-        </p>
-      </Container>
-    </Root>
+    <React.Fragment>
+      <SubHeader>Bio</SubHeader>
+      <Root id="bio">
+        <Container />
+      </Root>
+    </React.Fragment>
   );
 };
 
