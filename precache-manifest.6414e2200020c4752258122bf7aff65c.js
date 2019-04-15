@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/mm_kochshow.64c7f588.png"
   },
   {
-    "revision": "c485958718915a0dae0e",
+    "revision": "8f6e16f5b9ce879a2951",
     "url": "/static/css/main.eebf1b3d.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/static/media/koa_bunga.e62ca800.gif"
   },
   {
-    "revision": "c485958718915a0dae0e",
-    "url": "/static/js/main.8cb2b455.chunk.js"
+    "revision": "8f6e16f5b9ce879a2951",
+    "url": "/static/js/main.878e881c.chunk.js"
   },
   {
     "revision": "be06689853aec102607f5e54e6fd2dfa",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/static/media/gmail.b6f24e60.svg"
   },
   {
-    "revision": "b04977abb741a6c523fe8a408f2ddd93",
+    "revision": "34c2081c3d8be477f0ce96db164bde29",
     "url": "/index.html"
   }
 ];
