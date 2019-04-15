@@ -27,7 +27,7 @@ const Content = styled.div`
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Root>
         <Header />
         <Content>
