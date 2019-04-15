@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/static/media/gmail.b6f24e60.svg"
   },
   {
-    "revision": "34c2081c3d8be477f0ce96db164bde29",
+    "revision": "990694b1fa3395f2dd46aba6cd274c23",
     "url": "/index.html"
   }
 ];
