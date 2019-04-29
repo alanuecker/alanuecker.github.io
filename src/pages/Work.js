@@ -1,4 +1,5 @@
 import * as React from 'react';
+import styled from '@emotion/styled';
 
 import rise from '../img/rise_logo.png';
 import koaBunga from '../img/koa_bunga.gif';
@@ -8,6 +9,10 @@ import Post from '../components/Post';
 import Link from '../components/base/Link';
 import Grid from '../components/base/Grid';
 import SubHeader from '../components/base/SubHeader';
+
+const TextLink = styled(Link)`
+  padding: 0 0.25rem;
+`;
 
 const Work = () => {
   return (
@@ -20,11 +25,54 @@ const Work = () => {
           alt="rise technologies"
           title="Rise Technologies"
           subtitle="Software Engineer"
-          tags={['2017 - 2019', 'React', 'Meteor', 'Material Design']}
+          tags={['2017 - 2019', 'React', 'Meteor', 'UI', 'CSS', 'Material Design']}
         >
-          {`
-          team size: <10
-        `}
+          Tasks:
+          <br />
+          - creation and maintenance of ui components and pages
+          <br />
+          - providing a coherent ui experience
+          <br />
+          - implementation of new features
+          <br />
+          - data fetching and manipulation from mongodb
+          <br />
+          <br />
+          Major Projects:
+          <br />
+          <br />
+          UI Components:
+          <br />
+          Implemented
+          <TextLink to="https://github.com/material-components/material-components-web">
+            MDC Web
+          </TextLink>
+          as the main ui framework for styling and rebuild all existing components.
+          <br />
+          <br />
+          CI System:
+          <br />
+          Die css variablen von
+          <TextLink to="https://github.com/material-components/material-components-web">
+            MDC Web
+          </TextLink>
+          wurden genutzt auf darauf ein dynamisches theming system aufzubauen, welches ohne
+          umfangreiche react updates auskommt und es kunden ermoeglicht ihr eigenen farben zu nutzen
+          <br />
+          <br />
+          Select Menus:
+          <br />
+          <TextLink to="https://github.com/JedWatson/react-select">React Select v2</TextLink> wurde
+          als Basis genommen um eine mehrere komplexe select menus oder einen date picker zu bauen.
+          <br />
+          <br />
+          Stepper:
+          <br />
+          es wurde eine stepper componente gebaut, welche die validierung von einzelnen steps
+          ermoeglicht, die navigation per swipe gesten ermoeglicht, eine umfangreiche navigation per
+          tastatur ermoeglicht und einzelne steps lazy loaded
+          <br />
+          <br />
         </Post>
         <Post
           key="koaBunga"

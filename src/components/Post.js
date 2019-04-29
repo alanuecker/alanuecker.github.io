@@ -9,6 +9,12 @@ import Body from './base/Body';
 
 const Root = styled.div`
   display: block;
+`;
+
+const Border = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
   border-radius: 0.25rem;
   border: 1px solid rgba(0, 0, 0, 0.87);
 `;
@@ -45,19 +51,21 @@ const TitleContainer = styled.div`
 const Post = ({ src, alt, title, subtitle, tags, children }) => {
   return (
     <Root>
-      <Container>
-        {src && <Image src={src} alt={alt} />}
-        <TitleContainer hasImage={!!src}>
-          {title && <H1>{title}</H1>}
-          {subtitle && <H2>{subtitle}</H2>}
-        </TitleContainer>
-      </Container>
-      <TagContainer>
-        {tags.map(t => (
-          <Tag key={t}>{t}</Tag>
-        ))}
-      </TagContainer>
-      <Body>{children}</Body>
+      <Border>
+        <Container>
+          {src && <Image src={src} alt={alt} />}
+          <TitleContainer hasImage={!!src}>
+            {title && <H1>{title}</H1>}
+            {subtitle && <H2>{subtitle}</H2>}
+          </TitleContainer>
+        </Container>
+        <TagContainer>
+          {tags.map(t => (
+            <Tag key={t}>{t}</Tag>
+          ))}
+        </TagContainer>
+        <Body>{children}</Body>
+      </Border>
     </Root>
   );
 };
