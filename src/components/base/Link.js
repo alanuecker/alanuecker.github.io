@@ -1,7 +1,8 @@
+import React from 'react';
 import styled from '@emotion/styled';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-const Root = styled(Link)`
+const Root = styled(NavLink)`
   color: #231f20;
   text-decoration: none;
   text-transform: uppercase;
@@ -12,4 +13,12 @@ const Root = styled(Link)`
   }
 `;
 
-export default Root;
+const Link = ({ to, className, children }) => {
+  return (
+    <Root to={to} activeStyle={{ textDecoration: 'line-through' }} className={className} exact>
+      {children}
+    </Root>
+  );
+};
+
+export default Link;

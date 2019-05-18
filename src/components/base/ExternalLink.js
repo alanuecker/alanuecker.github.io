@@ -14,7 +14,7 @@ const Root = styled.a`
 
 const ExternalLink = ({ to, newTab = true, className, children }) => {
   return (
-    <Root className={className} href={to} target={newTab ? "_blank" : ""}>
+    <Root className={className} href={to} target={newTab ? '_blank' : ''}>
       {children}
     </Root>
   );

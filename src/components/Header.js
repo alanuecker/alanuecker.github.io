@@ -13,7 +13,7 @@ const Row = styled.ul`
   text-align: center;
   margin: 0;
   padding: 1rem 2rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.87);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.87);
 
   @media all and (max-width: 780px) {
     grid-template-rows: 1fr 1fr;
@@ -26,7 +26,7 @@ const Row = styled.ul`
 const Tab = styled.li`
   list-style: none;
   font-size: 1rem;
-  grid-area: ${props => props.area};
+  grid-area: ${(props) => props.area};
   > a {
     font-weight: 700;
   }

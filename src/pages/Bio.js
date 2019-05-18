@@ -19,15 +19,20 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const Bio = () => {
-  return (
-    <React.Fragment>
-      <SubHeader>Bio</SubHeader>
-      <Root id="bio">
-        <Container />
-      </Root>
-    </React.Fragment>
-  );
-};
+const Bio = () => (
+  <React.Fragment>
+    <SubHeader>Bio</SubHeader>
+    <Root id="bio">
+      <Container>
+        Hi. My name is Alan and i am Software Engineer based in Cologne, Germany.
+        <br />
+        <br />I mostly focus on the frontend part of an application and really like the
+        possibilities that javascript offers to modern web development.
+        <br /> Especially the short and fast way from idea to finished implementation make a lot of
+        fun.
+      </Container>
+    </Root>
+  </React.Fragment>
+);
 
 export default Bio;

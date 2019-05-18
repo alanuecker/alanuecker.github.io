@@ -18,15 +18,15 @@ const Row = styled.footer`
   font-size: 0; /* override body font size */
   margin: 0 0 1rem;
   padding-top: 1rem;
-  ${props => !props.noBorder && 'border-top: 1px solid black;'}
+  ${(props) => !props.noBorder && 'border-top: 2px solid black;'}
   > a:not(:last-child) {
     margin-right: 2rem;
   }
 `;
 
 const Icon = styled(ExternalLink)`
-  height: ${props => (props.bigIcon ? '3rem' : '1.5rem')};
-  width: ${props => (props.bigIcon ? '3rem' : '1.5rem')};
+  height: ${(props) => (props.bigIcon ? '3rem' : '1.5rem')};
+  width: ${(props) => (props.bigIcon ? '3rem' : '1.5rem')};
   fill: #231f20;
 `;
 

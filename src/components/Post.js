@@ -16,14 +16,14 @@ const Border = styled.div`
   flex-direction: column;
   flex: 1 0 auto;
   border-radius: 0.25rem;
-  border: 1px solid rgba(0, 0, 0, 0.87);
+  border: 2px solid rgba(0, 0, 0, 0.87);
 `;
 
 const Container = styled.div`
   display: flex;
   flex: 1 1 auto;
   padding: 1rem 1rem 0.5rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.87);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.87);
 
   @media all and (max-width: 360px) {
     flex-direction: column;
@@ -41,7 +41,7 @@ const TitleContainer = styled.div`
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  ${props => props.hasImage && 'padding-left: 1rem;'}
+  ${(props) => props.hasImage && 'padding-left: 1rem;'}
 
   @media all and (max-width: 360px) {
     padding: 1rem 0;
@@ -60,7 +60,7 @@ const Post = ({ src, alt, title, subtitle, tags, children }) => {
           </TitleContainer>
         </Container>
         <TagContainer>
-          {tags.map(t => (
+          {tags.map((t) => (
             <Tag key={t}>{t}</Tag>
           ))}
         </TagContainer>
