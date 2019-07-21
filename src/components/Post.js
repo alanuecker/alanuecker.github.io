@@ -6,6 +6,7 @@ import Tag from './base/Tag';
 import H1 from './base/H1';
 import H2 from './base/H2';
 import Body from './base/Body';
+import Image from './base/Image';
 
 const Root = styled.div`
   display: block;
@@ -28,13 +29,6 @@ const Container = styled.div`
   @media all and (max-width: 360px) {
     flex-direction: column;
   }
-`;
-
-const Image = styled.img`
-  display: flex;
-  height: 100%;
-  width: 120px;
-  border: 1px solid rgba(0, 0, 0, 0.87);
 `;
 
 const TitleContainer = styled.div`

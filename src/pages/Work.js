@@ -29,15 +29,15 @@ const Work = () => {
           <br />
           Tasks:
           <br />
-          - creation and maintenance of ui components
+          - implementation of user elements on the basis of design templates
           <br />
-          - implementation of new app features
+          - planning and conception of new functions for the company's own application
           <br />
-          - providing a coherent ui experience
+          - providing a coherent ui experience across all devices
+          <br />
+          - researching and evaluating new technologies
           <br />
           - improving the internal ui development experience
-          <br />
-          - data fetching from mongodb
           <br />
           <br />
           <ExternalLink to="https://rise.tech">Website</ExternalLink>

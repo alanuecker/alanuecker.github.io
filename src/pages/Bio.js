@@ -2,6 +2,8 @@ import * as React from 'react';
 import styled from '@emotion/styled';
 
 import SubHeader from '../components/base/SubHeader';
+import Tag from '../components/base/Tag';
+import TagContainer from '../components/base/TagContainer';
 
 const Root = styled.div`
   display: grid;
@@ -10,6 +12,15 @@ const Root = styled.div`
   grid-template-areas: 'left content right';
   font-size: 1rem;
   margin: 0 2rem;
+
+  @media all and (max-width: 910px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'content';
+  }
+  @media all and (max-width: 480px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'content';
+  }
 `;
 
 const Container = styled.div`
@@ -24,12 +35,48 @@ const Bio = () => (
     <SubHeader>Bio</SubHeader>
     <Root id="bio">
       <Container>
-        Hi. My name is Alan and i am Software Engineer based in Cologne, Germany.
+        Hi. My name is Alan and i am software engineer based in Cologne, Germany.
         <br />
-        <br />I mostly focus on the frontend part of an application and really like the
-        possibilities that javascript offers to modern web development.
-        <br /> Especially the short and fast way from idea to finished implementation make a lot of
-        fun.
+        <br />
+        <b>TECHNICAL SKILLS</b>
+        <br />
+        Programming languages:
+        <TagContainer>
+          <Tag key="javascript">JavaScript</Tag>
+          <Tag key="csharp">C#</Tag>
+        </TagContainer>
+        Web development:
+        <TagContainer>
+          <Tag key="react">React</Tag>
+          <Tag key="html">HTML</Tag>
+          <Tag key="css">CSS</Tag>
+          <Tag key="node">Node.js</Tag>
+          <Tag key="docker">Docker</Tag>
+        </TagContainer>
+        Mobile Development:
+        <TagContainer>
+          <Tag key="cordova">Cordova</Tag>
+        </TagContainer>
+        Software Experience:
+        <TagContainer>
+          <Tag key="vscode">Visual Studio Code</Tag>
+          <Tag key="unity">Unity</Tag>
+          <Tag key="git">Git</Tag>
+        </TagContainer>
+        <br />
+        <br />
+        <b>PROFESSIONAL EXPERIENCE</b>
+        rise technologies GmbH <br />
+        software engineer
+        <br /> 06/2017 - 08/2019
+        <br /> Conception and implementation of user elements and functions for a SaaS communication
+        platform
+        <br />
+        <br />
+        <b>SCHOOL</b>
+        University of Mittweida
+        <br /> Graduation: 2018
+        <br /> Bachelor of Science in Media Informatics and Interactive Entertainment
       </Container>
     </Root>
   </React.Fragment>
