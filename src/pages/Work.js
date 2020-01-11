@@ -3,6 +3,7 @@ import * as React from 'react';
 import rise from '../img/rise_logo.png';
 import koaBunga from '../img/koa_bunga.gif';
 import mmKochShow from '../img/mm_kochshow.png';
+import imgly from '../img/imgly.jpg';
 
 import Post from '../components/Post';
 import ExternalLink from '../components/base/ExternalLink';
@@ -15,23 +16,45 @@ const Work = () => {
       <SubHeader>Work</SubHeader>
       <Grid id="works">
         <Post
+          key="imgly"
+          src={imgly}
+          alt="img.ly"
+          title="img.ly"
+          subtitle="Software Engineer"
+          tags={['2019 - now', 'React']}
+        >
+          img.ly is the team behind PhotoEditorSDK, a fully customizable photo
+          editor for your app
+          <br />
+          <br />
+          <ExternalLink to="https://photoeditorsdk.com/">Website</ExternalLink>
+        </Post>
+        <Post
           key="rise"
           src={rise}
           alt="rise technologies"
           title="Rise Technologies"
           subtitle="Software Engineer"
-          tags={['2017 - 2019', 'React', 'Meteor', 'UI', 'CSS', 'Material Design']}
+          tags={[
+            '2017 - 2019',
+            'React',
+            'Meteor',
+            'UI',
+            'CSS',
+            'Material Design'
+          ]}
         >
-          rise is a comprehensive communication platform for the industrial service with which you
-          can communicate securely, provide effective support and document the resulting expert
-          knowledge.
+          rise is a comprehensive communication platform for the industrial
+          service with which you can communicate securely, provide effective
+          support and document the resulting expert knowledge.
           <br />
           <br />
           Tasks:
           <br />
           - implementation of user elements on the basis of design templates
           <br />
-          - planning and conception of new functions for the company's own application
+          - planning and conception of new functions for the company's own
+          application
           <br />
           - providing a coherent ui experience across all devices
           <br />
@@ -50,13 +73,14 @@ const Work = () => {
           subtitle="Programmer"
           tags={['2016 - 2017', 'Unity', 'C#', 'Gameplay', '2D Animation']}
         >
-          Koa Bunga is a student game which was made with 62 students within four months. The team
-          was structured into nine different departments.
+          Koa Bunga is a student game which was made with 62 students within
+          four months. The team was structured into nine different departments.
           <br />
           <br />
-          Koa Bunga is a blood surfing puzzle platformer, in which you use death to your advantage
-          and solve challenging puzzles to get you out of hell. It combines hardcore puzzle
-          platforming with fast-paced surfing and deadly tiki abilities.
+          Koa Bunga is a blood surfing puzzle platformer, in which you use death
+          to your advantage and solve challenging puzzles to get you out of
+          hell. It combines hardcore puzzle platforming with fast-paced surfing
+          and deadly tiki abilities.
           <br />
           <br />
           Tasks:
@@ -66,7 +90,9 @@ const Work = () => {
           - animation and scripting of the 2d intro sequence using unity
           <br />
           <br />
-          <ExternalLink to="https://www.youtube.com/watch?v=XQOOf71-y8o">Trailer</ExternalLink>
+          <ExternalLink to="https://www.youtube.com/watch?v=XQOOf71-y8o">
+            Trailer
+          </ExternalLink>
           <br />
           <ExternalLink to="https://steamcommunity.com/sharedfiles/filedetails/?id=870664518">
             Steam
@@ -80,14 +106,17 @@ const Work = () => {
           subtitle="Lead Programmer"
           tags={['2015', 'Unity', 'C#', 'Gameplay']}
         >
-          This game was developed and designed for an assignment in the fourth semester.
+          This game was developed and designed for an assignment in the fourth
+          semester.
           <br />
           <br />
-          "M&M Kochshow" is a fighting, action, platformer inspired by Super Smash Bros.
+          "M&M Kochshow" is a fighting, action, platformer inspired by Super
+          Smash Bros.
           <br />
           <br />
-          Two players fight each other to get the most ingredients in their cooking pot. Whoever has
-          the most points at the end of 5 minutes wins the show.
+          Two players fight each other to get the most ingredients in their
+          cooking pot. Whoever has the most points at the end of 5 minutes wins
+          the show.
           <br />
           <br />
           Tasks:
@@ -95,7 +124,9 @@ const Work = () => {
           - all code related tasks
           <br />
           <br />
-          <ExternalLink to="https://alanuecker.itch.io/die-mm-kochshow">Itch.io</ExternalLink>
+          <ExternalLink to="https://alanuecker.itch.io/die-mm-kochshow">
+            Itch.io
+          </ExternalLink>
         </Post>
       </Grid>
     </React.Fragment>

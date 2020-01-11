@@ -38,13 +38,13 @@ const Footer = ({ bigIcon = false, skipLocationCheck = false, location }) => {
       <Icon to="mailto:uecker.alan@gmail.com" newTab={false} bigIcon={bigIcon}>
         <Mail />
       </Icon>
-      <Icon to="https://linkedin.com/in/alan-uecker" bigIcon={bigIcon}>
+      <Icon to="https://linkedin.com/in/alanuecker" bigIcon={bigIcon}>
         <LinkedIn />
       </Icon>
       <Icon to="https://github.com/alanuecker" bigIcon={bigIcon}>
         <Github />
       </Icon>
-      <Icon to="https://twitter.com/_AlanUecker" bigIcon={bigIcon}>
+      <Icon to="https://twitter.com/alan_uecker" bigIcon={bigIcon}>
         <Twitter />
       </Icon>
     </Row>

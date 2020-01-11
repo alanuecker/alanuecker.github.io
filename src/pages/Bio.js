@@ -35,7 +35,7 @@ const Bio = () => (
     <SubHeader>Bio</SubHeader>
     <Root id="bio">
       <Container>
-        Hi. My name is Alan and i am software engineer based in Cologne, Germany.
+        Hi. My name is Alan and i am software engineer based in Bochum, Germany.
         <br />
         <br />
         <b>TECHNICAL SKILLS</b>
@@ -43,7 +43,6 @@ const Bio = () => (
         Programming languages:
         <TagContainer>
           <Tag key="javascript">JavaScript</Tag>
-          <Tag key="csharp">C#</Tag>
         </TagContainer>
         Web development:
         <TagContainer>
@@ -66,17 +65,24 @@ const Bio = () => (
         <br />
         <br />
         <b>PROFESSIONAL EXPERIENCE</b>
+        img.ly GmbH <br />
+        software engineer
+        <br /> 11/2019 - now
+        <br /> Building user elements for the PhotoEditorSDK and future projects
+        <br />
+        <br />
         rise technologies GmbH <br />
         software engineer
         <br /> 06/2017 - 08/2019
-        <br /> Conception and implementation of user elements and functions for a SaaS communication
-        platform
+        <br /> Conception and implementation of user elements and functions for
+        a SaaS communication platform
         <br />
         <br />
         <b>SCHOOL</b>
         University of Mittweida
         <br /> Graduation: 2018
-        <br /> Bachelor of Science in Media Informatics and Interactive Entertainment
+        <br /> Bachelor of Science in Media Informatics and Interactive
+        Entertainment
       </Container>
     </Root>
   </React.Fragment>
