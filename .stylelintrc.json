@@ -1,0 +1,10 @@
+{
+  "plugins": ["stylelint-a11y", "stylelint-prettier"],
+  "rules": {
+    "prettier/prettier": true,
+    "declaration-block-no-duplicate-properties": true,
+    "order/properties-alphabetical-order": null,
+    "function-parentheses-space-inside": null
+  },
+  "extends": ["stylelint-config-prettier", "stylelint-config-sass-guidelines"]
+}
