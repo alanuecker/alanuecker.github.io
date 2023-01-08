@@ -1,0 +1,54 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 5rem;
+
+  padding: 0 1rem;
+}
+
+.item {
+  display: flex;
+
+  text-decoration: none;
+
+  z-index: 1;
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:not(:first-child) {
+    margin-left: 2rem;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: rgba(255, 255, 255, 1);
+  }
+
+  &__label {
+    color: rgba(255, 255, 255, 1);
+    margin-left: 0.25rem;
+  }
+}

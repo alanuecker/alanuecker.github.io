@@ -9,5 +9,9 @@ interface Props {
 }
 
 export const Name: React.FC<Props> = ({ className }) => {
-  return <div className={classNames(className, classes.root)}>Alan Uecker</div>;
+  return (
+    <h1 className={classNames(className, classes.root)}>
+      Hello I&lsquo;m Alan Uecker a Software Engineer based in Leipzig, Germany.
+    </h1>
+  );
 };

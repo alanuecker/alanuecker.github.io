@@ -9,7 +9,16 @@ interface Props {
 export const Introduction: React.FC<Props> = ({ className }) => {
   return (
     <div className={className}>
-      Hi. My name is Alan and i am software engineer based in Leipzig, Germany.
+      I&lsquo;m currently working at <a href="img.ly">IMG.LY</a> building the
+      documentation experience for all SDKs.
+      <br />
+      <br />
+      Providing developers an easy way to write documentation and read
+      documenation.
+      <br />
+      <br />
+      Previously, I was heavily involved in developing and maintaining the
+      latest version of PE.SDK Web and all its public repositories and examples.
     </div>
   );
 };
