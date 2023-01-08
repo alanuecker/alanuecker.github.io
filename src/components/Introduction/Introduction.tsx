@@ -11,12 +11,21 @@ interface Props {
 export const Introduction: React.FC<Props> = ({ className }) => {
   return (
     <div className={classNames(classes.root, className)}>
-      I&lsquo;m currently working at <a href="img.ly">IMG.LY</a> building the
-      documentation experience for all SDKs.
+      I&lsquo;m a Software Engineer at{' '}
+      <a
+        className={classes.link}
+        href="https://img.ly"
+        target="_blank"
+        rel="noreferrer"
+      >
+        IMG.LY
+      </a>{' '}
+      based in Leipzig, Germany.
       <br />
       <br />
-      Providing developers an easy way to write documentation and read
-      documenation.
+      I currently develop and maintain the documentation experience for all
+      SDKs. This includes Markdown-based features to improve the writing process
+      and the front-end build in React.
       <br />
       <br />
       Previously, I was heavily involved in developing and maintaining the

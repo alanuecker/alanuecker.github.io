@@ -1,7 +1,5 @@
 import React from 'react';
 
-import classNames from 'classnames';
-
 import classes from './style.module.scss';
 
 interface Props {
@@ -10,8 +8,9 @@ interface Props {
 
 export const Name: React.FC<Props> = ({ className }) => {
   return (
-    <h1 className={classNames(classes.root, className)}>
-      Hello I&lsquo;m Alan Uecker a Software Engineer based in Leipzig, Germany.
-    </h1>
+    <>
+      <h1 className={classes.h1}>Alan Uecker</h1>
+      <h2 className={classes.h2}>Software Engineer</h2>
+    </>
   );
 };
