@@ -1,34 +1,53 @@
+// Color Palette
+$light: #e6eeee;
+$gradient-end: #c2d1d6;
+$dark: #141516;
+
 @function left($width) {
   $delta: calc($width / 2 - 50%);
   $abs: max($delta, -1 * $delta);
   @return calc($abs * -1);
 }
 
-.root {
-  $circle: 500px;
-  $width: calc($circle + 100%);
-  $height: 600px;
+$width: calc(500px + 100%);
+$height: 600px;
 
+.root {
   width: 100vw;
   height: 100vh;
 
   background: linear-gradient(
-    rgba(251, 252, 252, 1) 0%,
-    rgba(230, 238, 238, 1) 15%,
-    rgba(194, 209, 214, 1) 90%
+    rgba(252, 252, 252, 1) 0%,
+    rgba($light, 0.4) 15%,
+    rgba($gradient-end, 0.4) 90%
   );
+
+  color: $dark;
 
   &::before {
     position: fixed;
     left: left($width);
-    bottom: calc($height * 0.75 * -1);
+    bottom: calc($height * 0.8 * -1);
     width: $width;
     height: $height;
 
     border-radius: 50%;
 
     z-index: 0;
-    content: " ";
-    background-color: #141516;
+    content: ' ';
+    background-color: $dark;
   }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: calc(100% - $height * 0.2);
+
+  max-width: 800px;
+  padding: 2rem;
+  margin: auto;
 }

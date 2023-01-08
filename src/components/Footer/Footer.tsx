@@ -15,7 +15,7 @@ interface Props {
 
 export const Footer: React.FC<Props> = ({ className }) => {
   return (
-    <footer className={classNames(className, classes.root)}>
+    <footer className={classNames(classes.root, className)}>
       <a className={classes.item} href="mailhref:uecker.alan@gmail.com">
         <Mail className={classes.item__icon} />
         <span className={classes.item__label}>uecker.alan@gmail.com</span>

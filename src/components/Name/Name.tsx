@@ -10,7 +10,7 @@ interface Props {
 
 export const Name: React.FC<Props> = ({ className }) => {
   return (
-    <h1 className={classNames(className, classes.root)}>
+    <h1 className={classNames(classes.root, className)}>
       Hello I&lsquo;m Alan Uecker a Software Engineer based in Leipzig, Germany.
     </h1>
   );

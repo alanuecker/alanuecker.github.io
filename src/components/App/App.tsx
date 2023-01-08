@@ -1,7 +1,5 @@
 import React from 'react';
 
-import classNames from 'classnames';
-
 import { Footer } from '../Footer';
 import { Introduction } from '../Introduction';
 import { Name } from '../Name';
@@ -12,12 +10,10 @@ export const App: React.FC = () => {
   return (
     <div className={classes.root}>
       <section className={classes.hero}>
-        <Name className={classNames(classes.item, classes.item__center)} />
-        <Introduction
-          className={classNames(classes.item, classes.item__top_left)}
-        />
+        <Name />
+        <Introduction />
       </section>
-      <Footer className={classNames(classes.item, classes.item__bottom_left)} />
+      <Footer />
     </div>
   );
 };

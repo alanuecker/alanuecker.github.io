@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import classes from './style.module.scss';
 
 interface Props {
@@ -8,7 +10,7 @@ interface Props {
 
 export const Introduction: React.FC<Props> = ({ className }) => {
   return (
-    <div className={className}>
+    <div className={classNames(classes.root, className)}>
       I&lsquo;m currently working at <a href="img.ly">IMG.LY</a> building the
       documentation experience for all SDKs.
       <br />
