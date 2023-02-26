@@ -2,51 +2,104 @@
 $light: #e6eeee;
 $gradient-end: #c2d1d6;
 $dark: #141516;
-
-@function left($width) {
-  $delta: calc($width / 2 - 50%);
-  $abs: max($delta, -1 * $delta);
-  @return calc($abs * -1);
-}
-
-$width: calc(500px + 100%);
-$height: 600px;
+$background: #cbcbcb;
 
 .root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   width: 100vw;
   height: 100vh;
+
+  padding: 2rem;
 
   background: linear-gradient(
     rgba(252, 252, 252, 1) 0%,
     rgba($light, 0.4) 15%,
     rgba($gradient-end, 0.4) 90%
   );
-
-  color: $dark;
-
-  &::before {
-    position: fixed;
-    left: left($width);
-    bottom: calc($height * 0.8 * -1);
-    width: $width;
-    height: $height;
-
-    border-radius: 50%;
-
-    z-index: 0;
-    content: ' ';
-    background-color: $dark;
-  }
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.window {
+  position: relative;
+  width: 785px;
+  height: 523px;
+}
 
-  height: calc(100% - $height * 0.2);
+.frame-dark {
+  position: absolute;
+  width: 746px;
+  height: 454px;
+  left: 19px;
+  top: 49px;
 
-  max-width: 800px;
-  padding: 2rem;
-  margin: auto;
+  border-left: 2px solid #353535;
+  border-top: 2px solid #353535;
+}
+
+.frame-light {
+  position: absolute;
+  width: 742px;
+  height: 450px;
+  left: 23px;
+  top: 53px;
+
+  border-right: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+}
+
+.frame-accent {
+  position: absolute;
+  width: 743px;
+  height: 451px;
+  left: 22px;
+  top: 52px;
+
+  border-left: 4px solid #ff98f5;
+  border-top: 4px solid #ff98f5;
+}
+
+.outer-frame-light {
+  position: absolute;
+  width: 781px;
+  height: 521px;
+  left: 0;
+  top: 0;
+
+  border-left: 4px solid #ffffff;
+  border-top: 4px solid #ffffff;
+}
+
+.outer-frame-accent {
+  position: absolute;
+  width: 781px;
+  height: 519px;
+  left: 0;
+  top: 0;
+
+  border-right: 4px solid #ff98f5;
+  border-bottom: 4px solid #ff98f5;
+}
+
+.outer-frame-dark {
+  position: absolute;
+  width: 784px;
+  height: 522px;
+  left: 0;
+  top: 0;
+
+  border-right: 2px solid #353535;
+  border-bottom: 2px solid #353535;
+}
+
+.background {
+  position: absolute;
+  width: 785px;
+  height: 523px;
+  left: 0;
+  top: 0;
+
+  background: #ffcdfa;
 }
