@@ -1,0 +1,52 @@
+// Color Palette
+
+$frame-accent: #869da3;
+$frame-light: #fff;
+$frame-dark: #353535;
+$window-background: #e6eeee;
+
+$width: 1.5rem;
+$height: 1.5rem;
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  width: $width;
+  height: $height;
+
+  background: $window-background;
+}
+
+.outer-frame-light {
+  position: absolute;
+  width: $width;
+  height: $height;
+
+  border-left: 2.5px solid $frame-light;
+  border-top: 2.5px solid $frame-light;
+}
+
+.outer-frame-accent {
+  position: absolute;
+  width: calc($width - 1.5px);
+  height: calc($height - 1.5px);
+
+  right: 1.5px;
+  bottom: 1.5px;
+
+  border-right: 2.5px solid $frame-accent;
+  border-bottom: 2.5px solid $frame-accent;
+}
+
+.outer-frame-dark {
+  position: absolute;
+  width: $width;
+  height: $height;
+
+  border-right: 1.5px solid $frame-dark;
+  border-bottom: 1.5px solid $frame-dark;
+}

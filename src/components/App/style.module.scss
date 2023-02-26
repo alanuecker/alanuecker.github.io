@@ -1,8 +1,19 @@
 // Color Palette
-$light: #e6eeee;
-$gradient-end: #c2d1d6;
+$background: rgba(253, 253, 253, 1);
 $dark: #141516;
-$background: #cbcbcb;
+
+$frame-accent: #869da3;
+$frame-light: #fff;
+$frame-dark: #353535;
+$window-background: #e6eeee;
+
+$width: min(800px, 100%);
+$height: min(600px, 100%);
+$frame-width: 1.5rem;
+$header-height: 3rem;
+
+$inner-frame-width: calc($width - 2 * $frame-width);
+$inner-frame-height: calc($height - $frame-width - $header-height);
 
 .root {
   display: flex;
@@ -15,91 +26,91 @@ $background: #cbcbcb;
 
   padding: 2rem;
 
-  background: linear-gradient(
-    rgba(252, 252, 252, 1) 0%,
-    rgba($light, 0.4) 15%,
-    rgba($gradient-end, 0.4) 90%
-  );
+  background: $background;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.25rem;
+
+  position: absolute;
+  left: 4px;
+  right: calc(($frame-width - 4px - 6px) / 2 + 1px + 6px);
+
+  height: $header-height;
+
+  z-index: 100;
 }
 
 .window {
   position: relative;
-  width: 785px;
-  height: 523px;
+  width: $width;
+  height: $height;
+
+  background: $window-background;
 }
 
 .frame-dark {
   position: absolute;
-  width: 746px;
-  height: 454px;
-  left: 19px;
-  top: 49px;
+  width: $inner-frame-width;
+  height: $inner-frame-height;
+  left: $frame-width;
+  top: $header-height;
 
-  border-left: 2px solid #353535;
-  border-top: 2px solid #353535;
+  border-left: 2px solid $frame-dark;
+  border-top: 2px solid $frame-dark;
 }
 
 .frame-light {
   position: absolute;
-  width: 742px;
-  height: 450px;
-  left: 23px;
-  top: 53px;
+  width: $inner-frame-width;
+  height: $inner-frame-height;
+  left: $frame-width;
+  top: $header-height;
 
-  border-right: 4px solid #ffffff;
-  border-bottom: 4px solid #ffffff;
+  border-right: 4px solid $frame-light;
+  border-bottom: 4px solid $frame-light;
 }
 
 .frame-accent {
   position: absolute;
-  width: 743px;
-  height: 451px;
-  left: 22px;
-  top: 52px;
+  width: calc($inner-frame-width - 2px);
+  height: calc($inner-frame-height - 2px);
+  left: calc($frame-width + 2px);
+  top: calc($header-height + 2px);
 
-  border-left: 4px solid #ff98f5;
-  border-top: 4px solid #ff98f5;
+  border-left: 4px solid $frame-accent;
+  border-top: 4px solid $frame-accent;
 }
 
 .outer-frame-light {
   position: absolute;
-  width: 781px;
-  height: 521px;
-  left: 0;
-  top: 0;
+  width: $width;
+  height: $height;
 
-  border-left: 4px solid #ffffff;
-  border-top: 4px solid #ffffff;
+  border-left: 4px solid $frame-light;
+  border-top: 4px solid $frame-light;
 }
 
 .outer-frame-accent {
   position: absolute;
-  width: 781px;
-  height: 519px;
-  left: 0;
-  top: 0;
+  width: calc($width - 2px);
+  height: calc($height - 2px);
 
-  border-right: 4px solid #ff98f5;
-  border-bottom: 4px solid #ff98f5;
+  right: 2px;
+  bottom: 2px;
+
+  border-right: 4px solid $frame-accent;
+  border-bottom: 4px solid $frame-accent;
 }
 
 .outer-frame-dark {
   position: absolute;
-  width: 784px;
-  height: 522px;
-  left: 0;
-  top: 0;
+  width: $width;
+  height: $height;
 
-  border-right: 2px solid #353535;
-  border-bottom: 2px solid #353535;
-}
-
-.background {
-  position: absolute;
-  width: 785px;
-  height: 523px;
-  left: 0;
-  top: 0;
-
-  background: #ffcdfa;
+  border-right: 2px solid $frame-dark;
+  border-bottom: 2px solid $frame-dark;
 }
