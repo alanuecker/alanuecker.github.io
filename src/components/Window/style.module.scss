@@ -1,0 +1,104 @@
+// Color Palette
+$background: rgba(253, 253, 253, 1);
+$dark: #141516;
+
+$frame-accent: #869da3;
+$frame-light: #fff;
+$frame-dark: #353535;
+$window-background: #e6eeee;
+
+$width: min(800px, 100%);
+$height: min(600px, 100%);
+$frame-width: 1.5rem;
+$header-height: 3rem;
+
+$inner-frame-width: calc($width - 2 * $frame-width);
+$inner-frame-height: calc($height - $frame-width - $header-height);
+
+.root {
+  position: relative;
+  width: $width;
+  height: $height;
+
+  background: $window-background;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: min-content min-content auto min-content;
+  justify-content: stretch;
+
+  position: absolute;
+
+  width: $inner-frame-width;
+  height: $inner-frame-height;
+
+  left: $frame-width;
+  top: $header-height;
+
+  padding: 1.25rem;
+  padding-bottom: 0rem;
+}
+
+.frame-dark {
+  position: absolute;
+  width: $inner-frame-width;
+  height: $inner-frame-height;
+  left: $frame-width;
+  top: $header-height;
+
+  border-left: 2px solid $frame-dark;
+  border-top: 2px solid $frame-dark;
+}
+
+.frame-light {
+  position: absolute;
+  width: $inner-frame-width;
+  height: $inner-frame-height;
+  left: $frame-width;
+  top: $header-height;
+
+  border-right: 4px solid $frame-light;
+  border-bottom: 4px solid $frame-light;
+}
+
+.frame-accent {
+  position: absolute;
+  width: calc($inner-frame-width - 2px);
+  height: calc($inner-frame-height - 2px);
+  left: calc($frame-width + 2px);
+  top: calc($header-height + 2px);
+
+  border-left: 4px solid $frame-accent;
+  border-top: 4px solid $frame-accent;
+}
+
+.outer-frame-light {
+  position: absolute;
+  width: $width;
+  height: $height;
+
+  border-left: 4px solid $frame-light;
+  border-top: 4px solid $frame-light;
+}
+
+.outer-frame-accent {
+  position: absolute;
+  width: calc($width - 2px);
+  height: calc($height - 2px);
+
+  right: 2px;
+  bottom: 2px;
+
+  border-right: 4px solid $frame-accent;
+  border-bottom: 4px solid $frame-accent;
+}
+
+.outer-frame-dark {
+  position: absolute;
+  width: $width;
+  height: $height;
+
+  border-right: 2px solid $frame-dark;
+  border-bottom: 2px solid $frame-dark;
+}

@@ -1,0 +1,17 @@
+$frame-width: 1.5rem;
+$header-height: 3rem;
+
+.root {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.25rem;
+
+  position: absolute;
+  left: 4px;
+  right: calc(($frame-width - 4px - 6px) / 2 + 1px + 6px);
+
+  height: $header-height;
+
+  z-index: 100;
+}
