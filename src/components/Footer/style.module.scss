@@ -1,3 +1,5 @@
+@use '../../styles/mixins.scss';
+
 $dark: #141516;
 
 .root {
@@ -6,19 +8,16 @@ $dark: #141516;
   justify-content: center;
   flex-wrap: wrap;
 
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 1rem;
 
   height: 5rem;
 
   padding: 0 1rem;
 
-  @media (max-width: 816px) {
-    padding-bottom: 0.75rem;
-  }
-
-  @media (max-width: 530px) {
-    padding-bottom: 0;
+  @include mixins.sm {
+    height: 3rem;
+    padding: 0;
   }
 }
 

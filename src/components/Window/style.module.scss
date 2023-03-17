@@ -1,3 +1,5 @@
+@use '../../styles/mixins.scss';
+
 // Color Palette
 $background: rgba(253, 253, 253, 1);
 $dark: #141516;
@@ -7,18 +9,26 @@ $frame-light: #fff;
 $frame-dark: #353535;
 $window-background: #e6eeee;
 
-$width: min(800px, 100%);
-$height: min(600px, 100%);
 $frame-width: 1.5rem;
 $header-height: 3rem;
 
-$inner-frame-width: calc($width - 2 * $frame-width);
-$inner-frame-height: calc($height - $frame-width - $header-height);
+$inner-frame-width: calc(var(--window-width) - 2 * $frame-width);
+$inner-frame-height: calc(var(--window-height) - $frame-width - $header-height);
+
+:root {
+  --window-width: min(800px, 100%);
+  --window-height: min(600px, 100%);
+
+  @include mixins.sm {
+    --window-width: 100%;
+    --window-height: 100%;
+  }
+}
 
 .root {
   position: relative;
-  width: $width;
-  height: $height;
+  width: var(--window-width);
+  height: var(--window-height);
 
   background: $window-background;
 }
@@ -37,7 +47,10 @@ $inner-frame-height: calc($height - $frame-width - $header-height);
   top: $header-height;
 
   padding: 1.25rem;
-  padding-bottom: 0rem;
+
+  @include mixins.sm {
+    padding: 1rem;
+  }
 }
 
 .frame-dark {
@@ -75,8 +88,8 @@ $inner-frame-height: calc($height - $frame-width - $header-height);
 
 .outer-frame-light {
   position: absolute;
-  width: $width;
-  height: $height;
+  width: var(--window-width);
+  height: var(--window-height);
 
   border-left: 4px solid $frame-light;
   border-top: 4px solid $frame-light;
@@ -84,8 +97,8 @@ $inner-frame-height: calc($height - $frame-width - $header-height);
 
 .outer-frame-accent {
   position: absolute;
-  width: calc($width - 2px);
-  height: calc($height - 2px);
+  width: calc(var(--window-width) - 2px);
+  height: calc(var(--window-height) - 2px);
 
   right: 2px;
   bottom: 2px;
@@ -96,8 +109,8 @@ $inner-frame-height: calc($height - $frame-width - $header-height);
 
 .outer-frame-dark {
   position: absolute;
-  width: $width;
-  height: $height;
+  width: var(--window-width);
+  height: var(--window-height);
 
   border-right: 2px solid $frame-dark;
   border-bottom: 2px solid $frame-dark;

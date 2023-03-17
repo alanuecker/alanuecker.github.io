@@ -1,3 +1,5 @@
+@use '../../styles/mixins.scss';
+
 // Color Palette
 $background: rgba(253, 253, 253, 1);
 
@@ -13,4 +15,8 @@ $background: rgba(253, 253, 253, 1);
   padding: 2rem;
 
   background: $background;
+
+  @include mixins.sm {
+    padding: 0.5rem;
+  }
 }
