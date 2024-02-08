@@ -11,7 +11,9 @@ interface Props {
 export const Introduction: React.FC<Props> = ({ className }) => {
   return (
     <div className={classNames(classes.root, className)}>
-      I&lsquo;m a Software Engineer at{' '}
+      I&lsquo;m a Software Engineer based in Leipzig, Germany.
+      <br />
+      <br />I formerly worked at{' '}
       <a
         className={classes.link}
         href="https://img.ly"
@@ -20,12 +22,9 @@ export const Introduction: React.FC<Props> = ({ className }) => {
       >
         IMG.LY
       </a>{' '}
-      based in Leipzig, Germany.
-      <br />
-      <br />
-      I currently develop and maintain the documentation experience for all
-      SDKs. This includes Markdown-based features to improve the writing process
-      and the front-end build in React.
+      developing and maintaining the documentation experience for all SDKs. This
+      included Markdown-based features to improve the writing process and the
+      front-end build in React.
       <br />
       <br />
       Previously, I was heavily involved in developing and maintaining the
