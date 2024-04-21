@@ -2,10 +2,10 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import { ReactComponent as GitHub } from '../../img/icons/github.svg';
-import { ReactComponent as Mail } from '../../img/icons/gmail.svg';
-import { ReactComponent as LinkedIn } from '../../img/icons/linkedin.svg';
-import { ReactComponent as Twitter } from '../../img/icons/twitter.svg';
+import GitHub from '../../img/icons/github.svg?react';
+import Mail from '../../img/icons/gmail.svg?react';
+import LinkedIn from '../../img/icons/linkedin.svg?react';
+import Twitter from '../../img/icons/twitter.svg?react';
 
 import classes from './style.module.scss';
 

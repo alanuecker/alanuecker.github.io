@@ -6,7 +6,7 @@ interface Props {
   className?: string;
 }
 
-export const Name: React.FC<Props> = ({ className }) => {
+export const Name: React.FC<Props> = () => {
   return (
     <>
       <h1 className={classes.h1}>Alan Uecker</h1>
