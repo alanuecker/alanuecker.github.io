@@ -27,3 +27,26 @@
   font-display: swap;
   src: url("./fonts/Cabin-Bold-subset.woff2") format("woff2");
 }
+
+body {
+  --background: #f2f2f2;
+  --card-bg: #fff;
+  --text-color: #1e1e1e;
+  --border-color: #1e1e1e;
+  --accent-1-color: #c7d989;
+  --accent-2-color: #6ca6d9;
+  --accent-3-color: #f28dc4;
+
+  --border: 2px solid var(--border-color); 
+
+  padding: 0;
+  margin: 0;
+
+  background-color: var(--background);
+
+  font-family: "Cabin", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
