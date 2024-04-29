@@ -1,0 +1,16 @@
+@use "../../styles/typo.scss";
+
+.root {
+  list-style-type: none;
+}
+
+.link {
+  @include typo.typo-headline;
+  color: var(--text-color);
+  text-decoration: none;
+
+  &:active {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+}
