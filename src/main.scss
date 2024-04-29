@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-display: swap;
+  src: url("./fonts/Cabin-Regular-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-display: swap;
+  src: url("./fonts/Cabin-Medium-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-display: swap;
+  src: url("./fonts/Cabin-Bold-subset.woff2") format("woff2");
+}
