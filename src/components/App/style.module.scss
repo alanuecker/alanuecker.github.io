@@ -1,18 +1,12 @@
 @use '../../styles/mixins.scss';
 
-// Color Palette
-$background: rgba(253, 253, 253, 1);
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-.root {
-
-}
-
-body {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
 

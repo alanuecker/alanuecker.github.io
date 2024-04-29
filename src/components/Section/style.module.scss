@@ -1,0 +1,25 @@
+@use "../../styles/typo.scss";
+
+.root {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 700px;
+  margin: 5rem 4rem;
+
+  background-color: var(--card-bg);
+  border: var(--border);
+}
+
+.container {
+  padding: 1.5rem 2rem;
+  border-bottom: var(--border);
+}
+
+.headline {
+  @include typo.typo-headline;
+  color: var(--text-color);
+
+  margin: 0;
+  padding: 0;
+}
