@@ -1,8 +1,35 @@
+@use '../../styles/typo.scss';
+
 .root {
   border-top-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
 }
 
 .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
   padding: 2rem;
+}
+
+$weights: 2, 4, 6, 8, 10;
+
+.skill {
+  font-family: Cabin, sans-serif;
+  color: var(--text-color);
+
+  list-style: none;
+
+  --weight: 10;
+  opacity: calc((15 - (9 - var(--weight))) / 15 + 0.25);
+  font-size: calc(var(--weight) / 10 * 1rem + 0.75rem);
+
+  @each $i in $weights {
+    &[data-weigth="#{$i}"] {
+      --weight: #{$i};
+    }
+  }
 }
