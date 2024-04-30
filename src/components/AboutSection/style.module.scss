@@ -1,0 +1,25 @@
+@use "../../styles/typo.scss";
+
+.root {
+  margin-top: 8rem;
+
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.display {
+  @include typo.display;
+  color: var(--text-color);
+}
+
+.body {
+  @include typo.body;
+  color: var(--text-color);
+}

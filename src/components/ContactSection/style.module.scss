@@ -3,7 +3,22 @@
   border-bottom-left-radius: 2rem;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+
+  padding: 2rem;
+}
+
 .item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
+  padding: 1rem;
+
   &__icon {
     width: 2rem;
     height: 2rem;

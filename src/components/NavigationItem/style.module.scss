@@ -5,7 +5,7 @@
 }
 
 .link {
-  @include typo.typo-headline;
+  @include typo.headline;
   color: var(--text-color);
   text-decoration: none;
 
