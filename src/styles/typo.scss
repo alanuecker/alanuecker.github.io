@@ -1,4 +1,5 @@
 @mixin display {
+  font-family: Cabin, sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -6,6 +7,7 @@
 }
 
 @mixin headline {
+  font-family: Cabin, sans-serif;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
@@ -14,6 +16,7 @@
 }
 
 @mixin label {
+  font-family: Cabin, sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -22,6 +25,7 @@
 }
 
 @mixin body {
+  font-family: Cabin, sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -30,6 +34,7 @@
 }
 
 @mixin title {
+  font-family: Cabin, sans-serif;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
@@ -38,6 +43,7 @@
 }
 
 @mixin button {
+  font-family: Cabin, sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;

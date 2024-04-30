@@ -1,15 +1,23 @@
 @use "../../styles/typo.scss";
+@use "../../styles/mixins.scss";
 
 .root {
   display: flex;
   flex-direction: column;
 
-  width: 100%;
   max-width: 700px;
   margin: 4rem 4rem;
 
   background-color: var(--card-bg);
   border: var(--border);
+
+  @include mixins.md {
+    margin: 2rem 2rem;
+  }
+
+  @include mixins.sm {
+    margin: 1rem 1rem; 
+  }
 }
 
 .container {

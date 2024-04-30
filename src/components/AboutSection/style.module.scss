@@ -1,22 +1,36 @@
 @use "../../styles/typo.scss";
+@use "../../styles/mixins.scss";
 
 .root {
   margin-top: 8rem;
 
   border-top-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
+
+  @include mixins.md {
+    margin-top: 4rem;
+  }
+
+  @include mixins.sm {
+    margin-top: 2rem;
+  }
 }
 
 .container {
-  padding: 2rem;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+
   width: 100%;
+  padding: 2rem;
 }
 
 .display {
   @include typo.display;
   color: var(--text-color);
+
+  margin: 0;
+  padding: 0;
 }
 
 .body {
