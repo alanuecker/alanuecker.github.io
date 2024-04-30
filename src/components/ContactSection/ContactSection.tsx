@@ -5,55 +5,43 @@ import Mail from '../../img/icons/gmail.svg?react';
 import LinkedIn from '../../img/icons/linkedin.svg?react';
 import Twitter from '../../img/icons/twitter.svg?react';
 import { Section } from '../Section';
+import { ContactItem } from '../ContactItem';
 
 import classes from './style.module.scss';
 
 export function ContactSection(): React.JSX.Element {
   return (
-    <Section className={classes.root} id="contact" title="Contact Me">
+    <Section className={classes.root} id="contact" title="Get in touch">
       <div className={classes.container}>
-        <a className={classes.item} href="mailhref:uecker.alan@gmail.com">
-          <div>
-            <Mail className={classes.item__icon} /> Mail
-          </div>
-          <span className={classes.item__label}>uecker.alan@gmail.com</span>
-        </a>
-        <a
-          className={classes.item}
-          href="https://linkedin.com/in/alanuecker"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div>
-            <LinkedIn className={classes.item__icon} />
-            LinkedIn
-          </div>
-          <span className={classes.item__label}>alanuecker</span>
-        </a>
-        <a
-          className={classes.item}
+        <ContactItem
           href="https://github.com/alanuecker"
-          target="_blank"
-          rel="noreferrer"
+          title="GitHub"
+          icon={<GitHub />}
         >
-          <div>
-            <GitHub className={classes.item__icon} />
-            GitHub
-          </div>
-          <span className={classes.item__label}>alanuecker</span>
-        </a>
-        <a
-          className={classes.item}
+          @alanuecker
+        </ContactItem>
+        <ContactItem
+          href="mailhref:uecker.alan@gmail.com"
+          title="Mail"
+          external={false}
+          icon={<Mail />}
+        >
+          uecker.alan@gmail.com
+        </ContactItem>
+        <ContactItem
+          href="https://linkedin.com/in/alanuecker"
+          title="LinkedIn"
+          icon={<LinkedIn />}
+        >
+          @alanuecker
+        </ContactItem>
+        <ContactItem
           href="https://twitter.com/alan_uecker"
-          target="_blank"
-          rel="noreferrer"
+          title="Twitter"
+          icon={<Twitter />}
         >
-          <div>
-            <Twitter className={classes.item__icon} />
-            Twitter
-          </div>
-          <span className={classes.item__label}>@alan_uecker</span>
-        </a>
+          @alan_uecker
+        </ContactItem>
       </div>
     </Section>
   );

@@ -1,3 +1,6 @@
+@use '../../styles/typo.scss';
+@use '../../styles/mixins.scss';
+
 .root {
   border-top-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
@@ -10,17 +13,14 @@
   gap: 2rem;
 
   padding: 2rem;
-}
 
-.item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  
-  padding: 1rem;
-
-  &__icon {
-    width: 2rem;
-    height: 2rem;
+  > :nth-child(1) {
+    background-color: var(--accent-1-color);
+  }
+  > :nth-child(2) {
+    background-color: var(--accent-3-color);
+  }
+  > :nth-child(3) {
+    background-color: var(--accent-2-color);
   }
 }
