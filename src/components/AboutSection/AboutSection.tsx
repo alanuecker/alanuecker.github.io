@@ -1,17 +1,16 @@
 import React from 'react';
 
-import { Section } from '../Section';
+import GitHub from '../../img/icons/github.svg?react';
+import Mail from '../../img/icons/gmail.svg?react';
+import LinkedIn from '../../img/icons/linkedin.svg?react';
+import Twitter from '../../img/icons/twitter.svg?react';
+import { ContactItem } from '../ContactItem';
 
 import classes from './style.module.scss';
 
 export function AboutSection(): React.JSX.Element {
   return (
-    <Section
-      className={classes.root}
-      id="about"
-      title="About"
-      showTitle={false}
-    >
+    <section className={classes.root} id="about" title="About">
       <div className={classes.container}>
         <h1 className={classes.display}>
           Hi, I‘m Alan a Software Engineer based in Leipzig, Germany.
@@ -21,6 +20,29 @@ export function AboutSection(): React.JSX.Element {
           make me the perfect fit for any cross-functional team.
         </span>
       </div>
-    </Section>
+      <div className={classes.contacts}>
+        <ContactItem
+          href="https://github.com/alanuecker"
+          title="GitHub"
+          icon={<GitHub />}
+        />
+        <ContactItem
+          href="mailhref:uecker.alan@gmail.com"
+          title="Mail"
+          external={false}
+          icon={<Mail />}
+        />
+        <ContactItem
+          href="https://linkedin.com/in/alanuecker"
+          title="LinkedIn"
+          icon={<LinkedIn />}
+        />
+        <ContactItem
+          href="https://twitter.com/alan_uecker"
+          title="Twitter"
+          icon={<Twitter />}
+        />
+      </div>
+    </section>
   );
 }

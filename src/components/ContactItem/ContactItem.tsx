@@ -7,7 +7,6 @@ interface Props {
   title: string;
   external?: boolean;
   icon: React.ReactElement;
-  children: string;
 }
 
 export function ContactItem({
@@ -15,7 +14,6 @@ export function ContactItem({
   title,
   external = true,
   icon,
-  children,
 }: Props): React.JSX.Element {
   return (
     <a
@@ -24,10 +22,7 @@ export function ContactItem({
       target={external ? '_blank' : undefined}
       rel={external ? 'noreferrer' : undefined}
     >
-      <div className={classes.heading}>
-        {icon} <span className={classes.title}>{title}</span>
-      </div>
-      <span className={classes.body}>{children}</span>
+      {icon} <span className={classes.title}>{title}</span>
     </a>
   );
 }

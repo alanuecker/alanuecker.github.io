@@ -2,18 +2,11 @@
 @use "../../styles/mixins.scss";
 
 .root {
-  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
 
-  border-top-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-
-  @include mixins.md {
-    margin-top: 4rem;
-  }
-
-  @include mixins.sm {
-    margin-top: 2rem;
-  }
+  width: 100%;
+  max-width: 700px;
 }
 
 .container {
@@ -23,6 +16,11 @@
 
   width: 100%;
   padding: 2rem;
+
+  border: var(--border);
+  background-color: var(--card-bg);
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 .display {
@@ -36,4 +34,25 @@
 .body {
   @include typo.body;
   color: var(--text-color);
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+  padding-top: 1rem;
+
+  > :nth-child(1) {
+    background-color: var(--accent-1-color);
+  }
+  > :nth-child(2) {
+    background-color: var(--accent-3-color);
+  }
+  > :nth-child(3) {
+    background-color: var(--accent-2-color);
+  }
+  > :nth-child(4) {
+    background-color: var(--card-bg);
+  }
 }
