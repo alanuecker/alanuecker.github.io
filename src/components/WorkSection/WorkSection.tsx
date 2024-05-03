@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Section } from '../Section';
+import { SoftwareItems } from '../SoftwareItems';
 
 import classes from './style.module.scss';
 
@@ -16,7 +17,10 @@ export function WorkSection(): React.JSX.Element {
         </div>
         <div className={classes.item__container}>
           <span className={classes.item__title}>UI/UX Bootcamp - Student</span>
-          Learning the basics of UI/UX Research and Design
+          <span> Learning the basics of UI/UX Research and Design</span>
+          <SoftwareItems
+            items={['UX Principles', 'UX Research', 'UI Design', 'Figma']}
+          />
         </div>
       </div>
       <div className={classes.item}>
@@ -40,6 +44,16 @@ export function WorkSection(): React.JSX.Element {
             React, Typescript, and Gatsby, that was specifically designed to
             meet the needs of internal developers.
           </span>
+          <SoftwareItems
+            items={[
+              'TypeScript',
+              'React',
+              'Storybook',
+              'Gatsby',
+              'CI/CD',
+              'NPM',
+            ]}
+          />
         </div>
       </div>
       <div className={classes.item}>
@@ -53,9 +67,14 @@ export function WorkSection(): React.JSX.Element {
           <span className={classes.item__title}>
             rise technologies GmbH - Software Engineer
           </span>
-          I worked in a team of developers to create a communication-focused
-          SaaS platform in React and JavaScript. I also collaborated with a UI
-          designer to create a component library.
+          <span>
+            I worked in a team of developers to create a communication-focused
+            SaaS platform in React and JavaScript. I also collaborated with a UI
+            designer to create a component library.
+          </span>
+          <SoftwareItems
+            items={['JavaScript', 'React', 'Cordova', 'MongoDB']}
+          />
         </div>
       </div>
     </Section>
