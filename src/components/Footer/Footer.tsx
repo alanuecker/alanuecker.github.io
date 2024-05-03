@@ -25,7 +25,7 @@ export function Footer({ className }: Props): React.JSX.Element {
             </li>
           ))}
         </ul>
-        <ul className={classNames(classes.scroll, classes.scroll__two)}>
+        <ul aria-hidden="true" className={classes.scroll}>
           {Array.from({ length: 10 }, (_, i) => (
             <li key={`item_${i}`} className={classes.item}>
               Contact me <DelimiterIcon />

@@ -1,2 +1,2 @@
-- button outlines for keyboard
-- aria-expanded for menu (probably)
+- button focus state for keyboard
+- legal page and other required information

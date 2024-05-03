@@ -81,6 +81,7 @@ export function Header(): React.JSX.Element {
           className={classNames(classes.mobile, {
             [classes.mobile__show]: open,
           })}
+          aria-hidden={open}
         >
           <button className={classes.close} onClick={handleClose}>
             <CloseIcon className={classes.close__icon} />
