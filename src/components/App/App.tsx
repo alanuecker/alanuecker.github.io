@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Header } from '../Header';
 import { Footer } from '../Footer';
-import { ContactSection } from '../ContactSection';
 import { AboutSection } from '../AboutSection';
 import { SkillsSection } from '../SkillsSection';
 import { WorkSection } from '../WorkSection';
@@ -16,7 +15,6 @@ export function App(): React.JSX.Element {
       <Header />
       <main className={classes.content}>
         <AboutSection />
-        <ContactSection />
         <WorkSection />
         <SkillsSection />
         <ProjectsSection />

@@ -68,13 +68,13 @@ export function Header(): React.JSX.Element {
           </button>
         </div>
         <ul className={classes.nav}>
-          <NavigationItem href="/">About</NavigationItem>
+          <NavigationItem href="#">About</NavigationItem>
           <DelimiterIcon className={classes.delimiter} />
-          <NavigationItem href="/contact">Contact</NavigationItem>
+          <NavigationItem href="#work">Work</NavigationItem>
           <DelimiterIcon className={classes.delimiter} />
-          <NavigationItem href="/work">Work</NavigationItem>
+          <NavigationItem href="#skills">Skills</NavigationItem>
           <DelimiterIcon className={classes.delimiter} />
-          <NavigationItem href="/projects">Projects</NavigationItem>
+          <NavigationItem href="#projects">Projects</NavigationItem>
         </ul>
         <div
           ref={mobileSidebarRef}
@@ -86,16 +86,16 @@ export function Header(): React.JSX.Element {
             <CloseIcon className={classes.close__icon} />
           </button>
           <ul className={classes.mobile__list}>
-            <NavigationItem href="/" onClick={handleClose}>
+            <NavigationItem href="#" onClick={handleClose}>
               About
             </NavigationItem>
-            <NavigationItem href="/contact" onClick={handleClose}>
-              Contact
-            </NavigationItem>
-            <NavigationItem href="/work" onClick={handleClose}>
+            <NavigationItem href="#work" onClick={handleClose}>
               Work
             </NavigationItem>
-            <NavigationItem href="/projects" onClick={handleClose}>
+            <NavigationItem href="#skills" onClick={handleClose}>
+              Skills
+            </NavigationItem>
+            <NavigationItem href="#projects" onClick={handleClose}>
               Projects
             </NavigationItem>
           </ul>
