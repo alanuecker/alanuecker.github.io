@@ -5,6 +5,17 @@
   border-bottom-right-radius: 2rem;
 }
 
+.diamond {
+  position: absolute;
+  left: calc(-2rem - 1px);
+  top: calc(-2rem - 1px);
+
+  width: 4rem;
+  height: 4rem;
+
+  color: var(--accent-1-color);
+}
+
 .item {
   @include typo.body;
 

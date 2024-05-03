@@ -2,12 +2,14 @@ import React from 'react';
 
 import { Section } from '../Section';
 import { SoftwareItems } from '../SoftwareItems';
+import DiamondIcon from '../../img/diamond.svg?react';
 
 import classes from './style.module.scss';
 
 export function WorkSection(): React.JSX.Element {
   return (
     <Section className={classes.root} id="work" title="Work & Education">
+      <DiamondIcon className={classes.diamond} />
       <div className={classes.item}>
         <div className={classes.item__date_container}>
           <span className={classes.item__date}>

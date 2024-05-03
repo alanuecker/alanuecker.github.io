@@ -6,6 +6,7 @@ import codingImageUrl from '../../img/coding.png';
 import responsiveImageUrl from '../../img/responsive-design.png';
 import digitalImageUrl from '../../img/digital.png';
 import controlPanelImageUrl from '../../img/control-panel.png';
+import DiamondIcon from '../../img/diamond.svg?react';
 
 import classes from './style.module.scss';
 
@@ -17,6 +18,7 @@ export function SkillsSection(): React.JSX.Element {
       title="Skills"
       showBorder={false}
     >
+      <DiamondIcon className={classes.diamond} />
       <div className={classes.container}>
         <div className={classes.item}>
           <img

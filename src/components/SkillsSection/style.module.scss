@@ -7,6 +7,17 @@
   }
 }
 
+.diamond {
+  position: absolute;
+  right: calc(-2rem + 1px);
+  top: calc(-2rem + 1px);
+
+  width: 4rem;
+  height: 4rem;
+
+  color: var(--accent-3-color);
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
