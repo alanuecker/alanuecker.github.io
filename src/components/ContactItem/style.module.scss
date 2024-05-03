@@ -2,6 +2,8 @@
 @use "../../styles/mixins.scss";
 
 .root {
+  @include mixins.hover;
+
   display: flex;
   flex: 1 0 0;
   justify-content: center;

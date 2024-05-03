@@ -125,6 +125,7 @@
 }
 
 .link {
+  @include mixins.underline;
   @include typo.body;
   color: var(--text-color);
 
@@ -132,8 +133,10 @@
   align-items: center;
   gap: 0.5rem;
 
+  width: min-content;
   padding: 0.25rem 0;
   text-decoration: none;
+  text-wrap: nowrap;
 
   > svg {
     width: 1.25rem;

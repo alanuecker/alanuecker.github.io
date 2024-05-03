@@ -1,10 +1,12 @@
 @use "../../styles/typo.scss";
+@use "../../styles/mixins.scss";
 
 .root {
   list-style-type: none;
 }
 
 .link {
+  @include mixins.underline;
   @include typo.headline;
   color: var(--text-color);
   text-decoration: none;
