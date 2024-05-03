@@ -1,35 +1,60 @@
-@use '../../styles/typo.scss';
+@use "../../styles/typo.scss";
+@use "../../styles/mixins.scss";
 
 .root {
-  border-top-right-radius: 2rem;
-  border-bottom-left-radius: 2rem;
+  > :first-child {
+    border-top-right-radius: 2rem;
+  }
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 
-  padding: 2rem;
+  padding-top: 2rem;
+
+  @include mixins.md {
+    padding-top: 1rem;
+    gap: 1rem;
+  }
 }
 
-$weights: 2, 4, 6, 8, 10;
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 
-.skill {
-  font-family: Cabin, sans-serif;
-  color: var(--text-color);
+  width: calc(50% - 1rem);
+  padding: 1rem;
 
-  list-style: none;
+  background-color: var(--card-bg);
+  border: var(--border);
+  border-radius: 0.5rem;
 
-  --weight: 10;
-  opacity: calc((15 - (9 - var(--weight))) / 15 + 0.25);
-  font-size: calc(var(--weight) / 10 * 1rem + 0.75rem);
+  @include mixins.md {
+    flex: 1 1 auto;
+  }
+  @include mixins.sm {
+    width: 100%;
+  }
 
-  @each $i in $weights {
-    &[data-weigth="#{$i}"] {
-      --weight: #{$i};
-    }
+  &__image {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    @include typo.title;
+    color: var(--text-color);
+    text-align: center;
+  }
+  &__body {
+    @include typo.body;
+    color: var(--text-color);
+    text-align: center;
   }
 }
