@@ -1,6 +1,7 @@
 import React from 'react';
 
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 import DelimiterIcon from '../../img/delimiter.svg?react';
 import GitHub from '../../img/icons/github.svg?react';
@@ -76,19 +77,24 @@ export function Footer({ className }: Props): React.JSX.Element {
         <div className={classes.sections}>
           <div className={classes.link_container}>
             <span className={classes.title}>Sections</span>
-            <a className={classes.link} href="#">
+            <Link className={classes.link} to="/">
               Home
-            </a>
-            <a className={classes.link} href="#work">
+            </Link>
+            <Link className={classes.link} to="/#work">
               Work and Education
-            </a>
-            <a className={classes.link} href="#skills">
+            </Link>
+            <Link className={classes.link} to="/#skills">
               Skills
-            </a>
-            <a className={classes.link} href="#projects">
+            </Link>
+            <Link className={classes.link} to="/#projects">
               Selected Work
-            </a>
-            <a className={classes.link}>Imprint</a>
+            </Link>
+            <Link className={classes.link} to="/imprint">
+              Imprint
+            </Link>
+            <Link className={classes.link} to="/privacy-policy">
+              Privacy Policy
+            </Link>
           </div>
 
           <span className={classes.copyright}>Copyright @ Alan Uecker</span>

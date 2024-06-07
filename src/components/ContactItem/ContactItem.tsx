@@ -5,14 +5,14 @@ import { Button } from '../Button';
 import classes from './style.module.scss';
 
 interface Props {
-  href: string;
+  to: string;
   title: string;
   external?: boolean;
   icon: React.ReactElement;
 }
 
 export function ContactItem({
-  href,
+  to,
   title,
   external = true,
   icon,
@@ -20,7 +20,7 @@ export function ContactItem({
   return (
     <Button
       className={classes.root}
-      href={href}
+      to={to}
       external={external}
       icon={icon}
       title={title}

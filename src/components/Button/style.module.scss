@@ -10,8 +10,9 @@
   align-self: stretch;
   gap: 0.5rem;
 
-  height: 2.5rem;
+  min-height: 2.5rem;
   padding: 0.625rem 1.5rem;
+  overflow: hidden;
 
   border-radius: 1rem;
 

@@ -1,23 +1,23 @@
 import React from 'react';
 
+import { Outlet } from 'react-router-dom';
+
 import { Header } from '../Header';
 import { Footer } from '../Footer';
-import { AboutSection } from '../AboutSection';
-import { SkillsSection } from '../SkillsSection';
-import { WorkSection } from '../WorkSection';
-import { ProjectsSection } from '../ProjectsSection';
 
 import classes from './style.module.scss';
 
-export function App(): React.JSX.Element {
+interface Props {
+  children?: React.ReactNode;
+}
+
+export function App({ children }: Props): React.JSX.Element {
   return (
     <div>
       <Header />
       <main className={classes.content}>
-        <AboutSection />
-        <WorkSection />
-        <SkillsSection />
-        <ProjectsSection />
+        <Outlet />
+        {children}
       </main>
       <Footer />
     </div>

@@ -13,7 +13,7 @@ export function AboutSection(): React.JSX.Element {
     <section className={classes.root} id="about" title="About">
       <div className={classes.container}>
         <h1 className={classes.display}>
-          Hi, I‘m Alan a Software Engineer based in Leipzig, Germany.
+          Hi, I‘m Alan a Software Engineer based in Leipzig, Germany.
         </h1>
         <span className={classes.body}>
           My experience in developing websites and an education in UI/UX design
@@ -22,23 +22,23 @@ export function AboutSection(): React.JSX.Element {
       </div>
       <div className={classes.contacts}>
         <ContactItem
-          href="https://github.com/alanuecker"
+          to="https://github.com/alanuecker"
           title="GitHub"
           icon={<GitHub />}
         />
         <ContactItem
-          href="mailhref:uecker.alan@gmail.com"
+          to="mailto:uecker.alan@gmail.com"
           title="Mail"
           external={false}
           icon={<Mail />}
         />
         <ContactItem
-          href="https://linkedin.com/in/alanuecker"
+          to="https://linkedin.com/in/alanuecker"
           title="LinkedIn"
           icon={<LinkedIn />}
         />
         <ContactItem
-          href="https://twitter.com/alan_uecker"
+          to="https://twitter.com/alan_uecker"
           title="Twitter"
           icon={<Twitter />}
         />

@@ -4,7 +4,7 @@ import classes from './style.module.scss';
 import classNames from 'classnames';
 
 interface Props {
-  id: string;
+  id?: string;
   title: string;
   showTitle?: boolean;
   showBorder?: boolean;

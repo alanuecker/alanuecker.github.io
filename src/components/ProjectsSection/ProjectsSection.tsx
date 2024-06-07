@@ -22,7 +22,7 @@ export function ProjectsSection(): React.JSX.Element {
           </span>
           <div className={classes.button_container}>
             <Button
-              href="https://github.com/alanuecker"
+              to="https://github.com/alanuecker"
               title="GitHub"
               icon={<GitHub />}
             />
