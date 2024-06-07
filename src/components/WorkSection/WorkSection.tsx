@@ -19,7 +19,10 @@ export function WorkSection(): React.JSX.Element {
         </div>
         <div className={classes.item__container}>
           <span className={classes.item__title}>UI/UX Bootcamp - Student</span>
-          <span> Learning the basics of UI/UX Research and Design</span>
+          <span>
+            Learning the basics of UI/UX Research and Design in a project based
+            and team oriented environment.
+          </span>
           <SoftwareItems
             items={['UX Principles', 'UX Research', 'UI Design', 'Figma']}
           />
@@ -37,9 +40,10 @@ export function WorkSection(): React.JSX.Element {
             IMG.LY GmbH - Software Engineer
           </span>
           <span>
-            I partenered with a Senior Developer to create a web-based image
-            editor in React and TypeScript. This also included customer support
-            and maintaining a npm library and it's integration examples.
+            I started out at IMG.LY by partenering with a Senior Developer to
+            create a web-based image editor in React and TypeScript. This also
+            included customer support for developers and maintaining a npm
+            library and it's integration examples.
           </span>
           <span>
             Afterwards I led the development of a documentation platform using
@@ -50,10 +54,17 @@ export function WorkSection(): React.JSX.Element {
             items={[
               'TypeScript',
               'React',
+              'SASS',
               'Storybook',
               'Gatsby',
+              'Markdown',
+              'MDX',
+              'Vite',
+              'ESLint',
+              'Jest',
+              'Playwright',
               'CI/CD',
-              'NPM',
+              'npm',
             ]}
           />
         </div>
@@ -70,7 +81,7 @@ export function WorkSection(): React.JSX.Element {
             rise technologies GmbH - Software Engineer
           </span>
           <span>
-            I worked in a team of developers to create a communication-focused
+            I worked in a team of 4 developers to create a communication-focused
             SaaS platform in React and JavaScript. I also collaborated with a UI
             designer to create a component library.
           </span>
