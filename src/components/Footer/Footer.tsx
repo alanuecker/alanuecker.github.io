@@ -38,45 +38,44 @@ export function Footer({ className }: Props): React.JSX.Element {
         <div className={classes.contact}>
           <div className={classes.link_container}>
             <h3 className={classes.headline}>Get in touch</h3>
-            <a className={classes.link} href="mailhref:uecker.alan@gmail.com">
+            <Link className={classes.link} to="mailhref:uecker.alan@gmail.com">
               <Mail />
               uecker.alan@gmail.com
-            </a>
+            </Link>
             <span className={classNames(classes.title, classes.title__follow)}>
               Follow me
             </span>
-            <a
+            <Link
               className={classes.link}
-              href="https://github.com/alanuecker"
+              to="https://github.com/alanuecker"
               target="_blank"
               rel="noreferrer"
             >
               <GitHub />
               GitHub
-            </a>
-            <a
+            </Link>
+            <Link
               className={classes.link}
-              href="https://linkedin.com/in/alanuecker"
+              to="https://linkedin.com/in/alanuecker"
               target="_blank"
               rel="noreferrer"
             >
               <LinkedIn />
               LinkedIn
-            </a>
-            <a
+            </Link>
+            <Link
               className={classes.link}
-              href="https://twitter.com/alan_uecker"
+              to="https://twitter.com/alan_uecker"
               target="_blank"
               rel="noreferrer"
             >
               <Twitter />
               Twitter
-            </a>
+            </Link>
           </div>
         </div>
         <div className={classes.sections}>
           <div className={classes.link_container}>
-            <span className={classes.title}>Sections</span>
             <Link className={classes.link} to="/">
               Home
             </Link>

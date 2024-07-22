@@ -11,14 +11,15 @@
 }
 
 @mixin hover {
-  box-shadow:
-    0 0 0 2px var(--border-color),
-    3px 3px 0 2px var(--border-color);
+  & {
+    box-shadow:
+      0 0 0 2px var(--border-color),
+      3px 3px 0 2px var(--border-color);
 
-  transition:
-    box-shadow 0.25s cubic-bezier(0.645, 0.045, 0.355, 1),
-    transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-
+    transition:
+      box-shadow 0.25s cubic-bezier(0.645, 0.045, 0.355, 1),
+      transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
   &:hover {
     box-shadow:
       0 0 0 2px var(--border-color),
@@ -28,8 +29,10 @@
 }
 
 @mixin underline {
-  position: relative;
-  overflow: hidden;
+  & {
+    position: relative;
+    overflow: hidden;
+  }
 
   &::after {
     content: "";

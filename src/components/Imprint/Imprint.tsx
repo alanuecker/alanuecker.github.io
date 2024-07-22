@@ -41,19 +41,19 @@ export function Imprint(): React.JSX.Element {
           <div className={classes.item__container}>
             <div className={classes.button_container}>
               <Button
-                href="https://www.flaticon.com/free-icons/responsive-design"
+                to="https://www.flaticon.com/free-icons/responsive-design"
                 title="Responsive design icons created by Freepik - Flaticon"
               />
               <Button
-                href="https://www.flaticon.com/free-icons/monitor"
+                to="https://www.flaticon.com/free-icons/monitor"
                 title="Monitor icons created by Freepik - Flaticon"
               />
               <Button
-                href="https://www.flaticon.com/free-icons/control-panel"
+                to="https://www.flaticon.com/free-icons/control-panel"
                 title="Control panel icons created by Freepik - Flaticon"
               />
               <Button
-                href="https://www.flaticon.com/free-icons/imaging"
+                to="https://www.flaticon.com/free-icons/imaging"
                 title="Imaging icons created by Freepik - Flaticon"
               />
             </div>

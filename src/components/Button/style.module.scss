@@ -2,8 +2,6 @@
 @use "../../styles/mixins.scss";
 
 .root {
-  @include mixins.hover;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +28,8 @@
   &:active {
     color: var(--text-color);
   }
+
+  @include mixins.hover;
 }
 
 .title {

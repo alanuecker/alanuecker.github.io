@@ -68,7 +68,7 @@ export function Header(): React.JSX.Element {
           </button>
         </div>
         <ul className={classes.nav}>
-          <NavigationItem to="/#">About</NavigationItem>
+          <NavigationItem to="/#about">About</NavigationItem>
           <DelimiterIcon className={classes.delimiter} />
           <NavigationItem to="/#work">Work</NavigationItem>
           <DelimiterIcon className={classes.delimiter} />
@@ -87,7 +87,7 @@ export function Header(): React.JSX.Element {
             <CloseIcon className={classes.close__icon} />
           </button>
           <ul className={classes.mobile__list}>
-            <NavigationItem to="/" onClick={handleClose}>
+            <NavigationItem to="/#about" onClick={handleClose}>
               About
             </NavigationItem>
             <NavigationItem to="/#work" onClick={handleClose}>

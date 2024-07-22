@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Outlet } from 'react-router-dom';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
 
 import { Header } from '../Header';
 import { Footer } from '../Footer';
@@ -14,6 +14,7 @@ interface Props {
 export function App({ children }: Props): React.JSX.Element {
   return (
     <div>
+      <ScrollRestoration />
       <Header />
       <main className={classes.content}>
         <Outlet />
