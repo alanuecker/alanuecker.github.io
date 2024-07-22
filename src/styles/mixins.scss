@@ -52,8 +52,7 @@
     transition: background-size 0.2s ease-in;
   }
 
-  &:hover::after,
-  &:focus::after {
+  &:hover::after {
     background-size: 100% 0.125rem;
   }
 }

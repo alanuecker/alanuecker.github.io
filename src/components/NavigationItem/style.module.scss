@@ -10,6 +10,8 @@
   color: var(--text-color);
   text-decoration: none;
 
+  outline-offset: 0.25rem;
+
   &:active {
     color: var(--text-color);
     text-decoration: none;
