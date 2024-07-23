@@ -87,6 +87,10 @@
 
   border-bottom: var(--border);
 
+  > li {
+    list-style-type: none;
+  }
+
   @include mixins.md {
     display: none;
   }

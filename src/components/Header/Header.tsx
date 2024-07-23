@@ -69,11 +69,17 @@ export function Header(): React.JSX.Element {
         </div>
         <ul className={classes.nav}>
           <NavigationItem to="/#about">About</NavigationItem>
-          <DelimiterIcon className={classes.delimiter} />
+          <li>
+            <DelimiterIcon className={classes.delimiter} />
+          </li>
           <NavigationItem to="/#work">Work</NavigationItem>
-          <DelimiterIcon className={classes.delimiter} />
+          <li>
+            <DelimiterIcon className={classes.delimiter} />
+          </li>
           <NavigationItem to="/#skills">Skills</NavigationItem>
-          <DelimiterIcon className={classes.delimiter} />
+          <li>
+            <DelimiterIcon className={classes.delimiter} />
+          </li>
           <NavigationItem to="/#projects">Projects</NavigationItem>
         </ul>
         <div
