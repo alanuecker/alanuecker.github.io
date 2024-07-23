@@ -18,13 +18,21 @@ export function WorkSection(): React.JSX.Element {
           </span>
         </div>
         <div className={classes.item__container}>
-          <span className={classes.item__title}>UI/UX Bootcamp - Student</span>
+          <span className={classes.item__title}>
+            UX/UI Product Design Bootcamp - WBS Coding School
+          </span>
           <span>
-            Learning the basics of UI/UX Research and Design in a project based
+            Learning the basics of UX Research and UI Design in a project based
             and team oriented environment.
           </span>
           <SoftwareItems
-            items={['UX Principles', 'UX Research', 'UI Design', 'Figma']}
+            items={[
+              'UX Principles',
+              'UX Research',
+              'UI Design',
+              'Design Thinking',
+              'Figma',
+            ]}
           />
         </div>
       </div>
@@ -37,18 +45,18 @@ export function WorkSection(): React.JSX.Element {
         </div>
         <div className={classes.item__container}>
           <span className={classes.item__title}>
-            IMG.LY GmbH - Software Engineer
+            Software Engineer - IMG.LY GmbH
           </span>
           <span>
-            I started out at IMG.LY by partenering with a Senior Developer to
-            create a web-based image editor in React and TypeScript. This also
-            included customer support for developers and maintaining a npm
-            library and it's integration examples.
+            I started out at IMG.LY by partnering with a Senior Developer to
+            create a web-based image editor using React and TypeScript. This
+            role also involved providing customer support for developers and
+            maintaining a npm library and it's integration examples.
           </span>
           <span>
-            Afterwards I led the development of a documentation platform using
-            React, Typescript, and Gatsby, that was specifically designed to
-            meet the needs of internal developers.
+            Afterward, I led the development of a documentation platform
+            utilizing React, Typescript, and Gatsby, that was specifically
+            designed to meet the needs of internal developers.
           </span>
           <SoftwareItems
             items={[
@@ -78,7 +86,7 @@ export function WorkSection(): React.JSX.Element {
         </div>
         <div className={classes.item__container}>
           <span className={classes.item__title}>
-            rise technologies GmbH - Software Engineer
+            Software Engineer - rise technologies GmbH
           </span>
           <span>
             I worked in a team of 4 developers to create a communication-focused

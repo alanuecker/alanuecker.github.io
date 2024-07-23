@@ -13,13 +13,8 @@ export function ProjectsSection(): React.JSX.Element {
       <DiamondIcon className={classes.diamond} />
       <div className={classes.item}>
         <div className={classes.item__container}>
-          <span className={classes.item__title}>Project 1</span>
-          <span>
-            Lorem ipsum dolor sit amet consectetur. Volutpat justo ultrices
-            tempor tristique ac faucibus at quis tincidunt. Justo malesuada
-            euismod praesent fames erat. Scelerisque aliquet ullamcorper aliquam
-            quam diam sed. Sapien commodo quam nisi habitant aenean.
-          </span>
+          <span className={classes.item__title}>WORK IN PROGRESS</span>
+          <span>COMMING SOON</span>
           <div className={classes.button_container}>
             <Button
               to="https://github.com/alanuecker"
