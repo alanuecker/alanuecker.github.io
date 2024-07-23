@@ -1,0 +1,21 @@
+@use "../../styles/typo.scss";
+@use "../../styles/mixins.scss";
+
+.root {
+  list-style-type: none;
+}
+
+.link {
+  @include typo.headline;
+  color: var(--text-color);
+  text-decoration: none;
+
+  outline-offset: 0.25rem;
+
+  &:active {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  @include mixins.underline;
+}

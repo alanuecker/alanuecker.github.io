@@ -1,0 +1,36 @@
+@use "../../styles/typo.scss";
+@use "../../styles/mixins.scss";
+
+.root {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  
+  width: 100%;
+  max-width: 700px;
+
+  &__border {
+    border: var(--border);
+    background-color: var(--card-bg);
+  }
+}
+
+.container {
+  padding: 1.5rem 2rem;
+  border-bottom: var(--border);
+
+  &__full_border {
+    border: var(--border);
+    background-color: var(--card-bg);
+  }
+}
+
+.headline {
+  @include typo.headline;
+
+  color: var(--text-color);
+
+  margin: 0;
+  padding: 0;
+}

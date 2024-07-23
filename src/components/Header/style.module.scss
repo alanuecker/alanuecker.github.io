@@ -1,0 +1,162 @@
+@use "../../styles/typo.scss";
+@use "../../styles/mixins.scss";
+
+.root {
+  display: flex;
+  flex-direction: column;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 9999;
+
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2rem;
+
+  height: var(--header-height);
+  padding: 1rem;
+
+  background-color: var(--accent-1-color);
+  border-bottom: var(--border);
+  border-top: var(--border);
+
+  @include mixins.md {
+    justify-content: space-between;
+  }
+}
+
+.name {
+  @include typo.display;
+  color: var(--text-color);
+}
+
+.job {
+  @include typo.display;
+  color: var(--text-color);
+
+  @include mixins.md {
+    display: none;
+  }
+}
+
+.menu {
+  display: none;
+  color: var(--text-color);
+
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+
+  background-color: transparent;
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @include mixins.md {
+    display: block;
+  }
+}
+
+.delimiter {
+  width: 1rem;
+  height: 1rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2rem;
+
+  height: var(--nav-height);
+  padding: 0;
+  margin: 0;
+
+  background-color: var(--card-bg);
+
+  border-bottom: var(--border);
+
+  @include mixins.md {
+    display: none;
+  }
+}
+
+.close {
+  width: 2rem;
+  height: 2rem;
+
+  border-radius: 1rem;
+
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  background-color: var(--card-bg);
+
+  cursor: pointer;
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.mobile {
+  display: none;
+
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+
+  position: absolute;
+  left: 0;
+  top: calc(4.5rem + 1px);
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 2rem;
+
+  border-bottom: var(--border);
+  background-color: var(--card-bg);
+
+  &__show {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    > li a::after {
+      content: none;
+    }
+
+    > li:not(:last-child) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      height: 2.5rem;
+      width: 100%;
+
+      border-bottom: var(--divider);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@use "../../styles/mixins.scss";
+
+.root {
+  flex: 1 0 0;
+
+  @include mixins.md {
+    flex: 1 1 auto;
+    width: calc(50% - 1rem);
+  }
+}

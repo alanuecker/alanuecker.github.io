@@ -1,0 +1,66 @@
+@use "./styles/mixins.scss";
+
+@font-face {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-display: swap;
+  src: url("./fonts/Cabin-Regular-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-display: swap;
+  src: url("./fonts/Cabin-Medium-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-display: swap;
+  src: url("./fonts/Cabin-Bold-subset.woff2") format("woff2");
+}
+
+body {
+  --background: #f2f2f2;
+  --card-bg: #fff;
+  --text-color: #1e1e1e;
+  --border-color: #1e1e1e;
+  --accent-1-color: #c7d989;
+  --accent-2-color: #6ca6d9;
+  --accent-3-color: #f28dc4;
+
+  --border: 2px solid var(--border-color);
+  --divider: 1px solid var(--border-color);
+
+  --header-heigth: 4.5rem;
+  --nav-height: 4rem;
+
+  padding: 0;
+  margin: 0;
+
+  background-color: var(--background);
+
+  font-family: "Cabin", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  scroll-margin-top: calc(var(--header-heigth) + var(--nav-height) + 2.5rem);
+
+  @include mixins.md {
+    scroll-margin-top: calc(var(--header-heigth) + 2.5rem);
+  }
+}

@@ -1,20 +1,26 @@
 import React from 'react';
 
+import { Outlet, ScrollRestoration } from 'react-router-dom';
+
+import { Header } from '../Header';
 import { Footer } from '../Footer';
-import { Introduction } from '../Introduction';
-import { Name } from '../Name';
-import { Window } from '../Window';
 
 import classes from './style.module.scss';
 
-export const App: React.FC = () => {
+interface Props {
+  children?: React.ReactNode;
+}
+
+export function App({ children }: Props): React.JSX.Element {
   return (
-    <div className={classes.root}>
-      <Window>
-        <Name />
-        <Introduction />
-        <Footer />
-      </Window>
+    <div>
+      <ScrollRestoration />
+      <Header />
+      <main className={classes.content}>
+        <Outlet />
+        {children}
+      </main>
+      <Footer />
     </div>
   );
-};
+}

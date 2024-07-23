@@ -1,0 +1,30 @@
+@use "../../styles/typo.scss";
+@use "../../styles/mixins.scss";
+
+.root {
+  display: flex;
+
+  border-top: var(--border);
+
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.text {
+  @include typo.body;
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+
+.icon {
+  width: 0.5rem;
+  height: 0.5rem;
+}
