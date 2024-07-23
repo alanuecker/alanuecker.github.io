@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 import { App } from './components/App';
 import { Home } from './components/Home';
@@ -10,7 +10,7 @@ import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { ErrorPage } from './components/ErrorPage';
 import './main.scss';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <App />,
     errorElement: <ErrorPage />,

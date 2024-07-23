@@ -17,8 +17,8 @@
     "dev": "vite",
     "build": "tsc & vite build",
     "lint:ts": "eslint",
-    "deploy": "gh-pages -b main -d build",
-    "lint:css": "stylelint '**/*.scss'"
+    "lint:css": "stylelint '**/*.scss'",
+    "test": "serve dist"
   },
   "browserslist": {
     "production": [

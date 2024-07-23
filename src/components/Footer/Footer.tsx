@@ -76,7 +76,7 @@ export function Footer({ className }: Props): React.JSX.Element {
         </div>
         <div className={classes.sections}>
           <div className={classes.link_container}>
-            <Link className={classes.link} to="/">
+            <Link className={classes.link} to="/#about">
               Home
             </Link>
             <Link className={classes.link} to="/#work">
