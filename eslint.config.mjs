@@ -20,6 +20,9 @@ export default tseslint.config(
       ],
     },
   },
+  {
+    ignores: ['dist', '**/node_modules'],
+  },
   // todo: disabled due to error
   // {
   //   files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],

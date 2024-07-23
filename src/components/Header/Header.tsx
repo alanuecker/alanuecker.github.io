@@ -28,7 +28,7 @@ export function Header(): React.JSX.Element {
   }
 
   const handleOutsiteClick = (event: MouseEvent) => {
-    if (!mobileSidebarRef.current?.contains(event.target)) {
+    if (!mobileSidebarRef.current?.contains(event.target as HTMLElement)) {
       if (open) {
         handleClose();
         menuButtonRef.current?.focus();

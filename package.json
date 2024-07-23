@@ -1,8 +1,9 @@
 {
   "name": "alanuecker.com",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://alanuecker.com",
+  "type": "module",
   "dependencies": {
     "classnames": "^2.3.2",
     "gh-pages": "^6.1.1",
