@@ -4,11 +4,12 @@ import ReactDOM from 'react-dom/client';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 import { App } from './components/App';
-import { Home } from './components/Home';
-import { Imprint } from './components/Imprint';
-import { PrivacyPolicy } from './components/PrivacyPolicy';
-import { ErrorPage } from './components/ErrorPage';
+import { Home } from './pages/Home';
+import { Imprint } from './pages/Imprint';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { ErrorPage } from './pages/ErrorPage';
 import './main.scss';
+import { TastyEffectCaseStudy } from './pages/TastyEffectCaseStudy';
 
 const router = createHashRouter([
   {
@@ -26,6 +27,10 @@ const router = createHashRouter([
       {
         path: '/privacy-policy',
         element: <PrivacyPolicy />,
+      },
+      {
+        path: '/projects/tasty-effect',
+        element: <TastyEffectCaseStudy />,
       },
     ],
   },

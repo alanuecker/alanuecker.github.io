@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section } from '../Section';
+import { Section } from '../../components/Section';
 import DiamondIcon from '../../img/diamond.svg?react';
 
 import classes from './style.module.scss';

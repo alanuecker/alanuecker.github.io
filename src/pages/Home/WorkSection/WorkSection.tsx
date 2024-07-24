@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Section } from '../Section';
-import { SoftwareItems } from '../SoftwareItems';
-import DiamondIcon from '../../img/diamond.svg?react';
+import { Section } from '../../../components/Section';
+import { SoftwareItems } from '../../../components/SoftwareItems';
+import DiamondIcon from '../../../img/diamond.svg?react';
 
 import classes from './style.module.scss';
 
