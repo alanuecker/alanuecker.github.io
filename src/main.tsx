@@ -8,8 +8,10 @@ import { Home } from './pages/Home';
 import { Imprint } from './pages/Imprint';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { ErrorPage } from './pages/ErrorPage';
-import './main.scss';
 import { TastyEffectCaseStudy } from './pages/TastyEffectCaseStudy';
+
+import './main.scss';
+import 'modern-normalize/modern-normalize.css';
 
 const router = createHashRouter([
   {
