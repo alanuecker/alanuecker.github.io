@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Section } from '../Section';
-import { SoftwareItems } from '../SoftwareItems';
-import DiamondIcon from '../../img/diamond.svg?react';
+import { Section } from '../../../components/Section';
+import { SoftwareItems } from '../../../components/SoftwareItems';
+import DiamondIcon from '../../../img/diamond.svg?react';
 
 import classes from './style.module.scss';
 
@@ -18,13 +18,13 @@ export function WorkSection(): React.JSX.Element {
           </span>
         </div>
         <div className={classes.item__container}>
-          <span className={classes.item__title}>
+          <h3 className={classes.item__title}>
             UX/UI Product Design Bootcamp - WBS Coding School
-          </span>
-          <span>
+          </h3>
+          <p>
             Learning the basics of UX Research and UI Design in a project based
             and team oriented environment.
-          </span>
+          </p>
           <SoftwareItems
             items={[
               'UX Principles',
@@ -44,20 +44,20 @@ export function WorkSection(): React.JSX.Element {
           </span>
         </div>
         <div className={classes.item__container}>
-          <span className={classes.item__title}>
+          <h3 className={classes.item__title}>
             Software Engineer - IMG.LY GmbH
-          </span>
-          <span>
+          </h3>
+          <p>
             I started out at IMG.LY by partnering with a Senior Developer to
             create a web-based image editor using React and TypeScript. This
             role also involved providing customer support for developers and
             maintaining a npm library and it's integration examples.
-          </span>
-          <span>
+          </p>
+          <p>
             Afterward, I led the development of a documentation platform
             utilizing React, Typescript, and Gatsby, that was specifically
             designed to meet the needs of internal developers.
-          </span>
+          </p>
           <SoftwareItems
             items={[
               'TypeScript',
@@ -85,14 +85,14 @@ export function WorkSection(): React.JSX.Element {
           </span>
         </div>
         <div className={classes.item__container}>
-          <span className={classes.item__title}>
+          <h3 className={classes.item__title}>
             Software Engineer - rise technologies GmbH
-          </span>
-          <span>
+          </h3>
+          <p>
             I worked in a team of 4 developers to create a communication-focused
             SaaS platform in React and JavaScript. I also collaborated with a UI
             designer to create a component library.
-          </span>
+          </p>
           <SoftwareItems
             items={['JavaScript', 'React', 'Cordova', 'MongoDB']}
           />

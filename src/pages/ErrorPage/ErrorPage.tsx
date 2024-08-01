@@ -2,12 +2,12 @@ import React from 'react';
 
 import { useRouteError } from 'react-router-dom';
 
-import { App } from '../App';
-import { Section } from '../Section';
+import { App } from '../../components/App';
+import { Section } from '../../components/Section';
 import DiamondIcon from '../../img/diamond.svg?react';
+import { Button } from '../../components/Button';
 
 import classes from './style.module.scss';
-import { Button } from '../Button';
 
 export function ErrorPage(): React.JSX.Element {
   const error = useRouteError();

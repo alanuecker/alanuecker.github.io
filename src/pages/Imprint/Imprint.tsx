@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Section } from '../Section';
+import { Section } from '../../components/Section';
 import DiamondIcon from '../../img/diamond.svg?react';
-import { Button } from '../Button';
+import { Button } from '../../components/Button';
 
 import classes from './style.module.scss';
 

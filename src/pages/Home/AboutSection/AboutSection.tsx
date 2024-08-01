@@ -1,10 +1,10 @@
 import React from 'react';
 
-import GitHub from '../../img/icons/github.svg?react';
-import Mail from '../../img/icons/gmail.svg?react';
-import LinkedIn from '../../img/icons/linkedin.svg?react';
-import Twitter from '../../img/icons/twitter.svg?react';
-import { ContactItem } from '../ContactItem';
+import GitHub from '../../../img/icons/github.svg?react';
+import Mail from '../../../img/icons/gmail.svg?react';
+import LinkedIn from '../../../img/icons/linkedin.svg?react';
+import Twitter from '../../../img/icons/twitter.svg?react';
+import { ContactItem } from '../../../components/ContactItem';
 
 import classes from './style.module.scss';
 

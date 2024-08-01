@@ -1,4 +1,4 @@
-@use "../../styles/typo.scss";
+@use "../../../styles/typo.scss";
 
 .root {
   border-top-left-radius: 2rem;
@@ -25,6 +25,10 @@
 
   color: var(--text-color);
 
+  p {
+    margin: 0;
+  }
+
   &:not(&:last-child) {
     border-bottom: var(--border);
   }
@@ -32,18 +36,26 @@
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
 
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
   }
 
   &__title {
     @include typo.title;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__image {
+
   }
 }
 
 .button_container {
   display: flex;
-  margin-top: 1.5rem;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
 }
