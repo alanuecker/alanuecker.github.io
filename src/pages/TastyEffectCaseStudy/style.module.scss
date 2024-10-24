@@ -8,14 +8,6 @@
 
   gap: 8rem;
 
-  @include mixins.md {
-    gap: 6rem;
-  }
-
-  @include mixins.sm {
-    gap: 4rem;
-  }
-
   color: var(--text-color);
 
   section {
@@ -23,7 +15,8 @@
     max-width: 700px;
   }
 
-  p {
+  p,
+  span {
     @include typo.body;
 
     margin: 0;
@@ -205,5 +198,183 @@
   }
   &__pain {
     grid-area: pain;
+  }
+}
+
+.sitemap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    width: 133%;
+
+    margin-top: 1.5rem;
+
+    @include mixins.lg {
+      width: 100%;
+      max-width: 690px;
+    }
+  }
+}
+
+.userflow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    width: 133%;
+
+    margin-top: 1.5rem;
+
+    @include mixins.lg {
+      width: 100%;
+    }
+  }
+}
+
+.wireframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__container {
+    display: grid;
+    grid-template:
+      "one two three"
+      "four five six";
+    gap: 1rem;
+
+    width: 133%;
+    margin-top: 1.5rem;
+    padding: 2rem;
+
+    border: var(--border);
+    background-color: var(--card-bg);
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    @include mixins.lg {
+      width: 100%;
+    }
+
+    @include mixins.md {
+      grid-template:
+        "one four"
+        "two five"
+        "three six";
+
+      padding: 1rem;
+    }
+
+    img:nth-child(1) {
+      grid-area: one;
+    }
+    img:nth-child(2) {
+      grid-area: two;
+    }
+    img:nth-child(3) {
+      grid-area: three;
+    }
+    img:nth-child(4) {
+      grid-area: four;
+    }
+    img:nth-child(5) {
+      grid-area: five;
+    }
+    img:nth-child(6) {
+      grid-area: six;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+
+    border-radius: 1rem;
+    border: var(--border);
+  }
+}
+
+.design {
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 1.5rem 0;
+    padding: 2rem;
+
+    border: var(--border);
+    background-color: var(--card-bg);
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+
+  &__color {
+    display: flex;
+    gap: 1rem;
+
+    height: 300px;
+
+    &_column {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    &_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      width: 100%;
+      height: 100%;
+
+      padding: 1rem;
+      border-radius: 1rem;
+
+      border: var(--border);
+    }
+  }
+}
+
+.final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    width: 133%;
+    margin-top: 1.5rem;
+    padding: 2rem;
+
+    border: var(--border);
+    background-color: var(--card-bg);
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    @include mixins.lg {
+      width: 100%;
+    }
+
+    @include mixins.md {
+      grid-template: 1fr 1fr;
+
+      padding: 1rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+
+    border-radius: 1rem;
+    border: var(--border);
   }
 }
