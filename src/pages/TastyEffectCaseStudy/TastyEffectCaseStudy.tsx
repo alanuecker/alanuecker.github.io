@@ -1,5 +1,26 @@
 import React from 'react';
 
+import sitemapURL from '../../img/images/te_sitemap-min.png';
+import userflowURL from '../../img/images/te_userflow-min.png';
+import wireframe1URL from '../../img/images/te_wireframe_1-min.png';
+import wireframe2URL from '../../img/images/te_wireframe_2-min.png';
+import wireframe3URL from '../../img/images/te_wireframe_3-min.png';
+import wireframe5URL from '../../img/images/te_wireframe_5-min.png';
+import wireframe6URL from '../../img/images/te_wireframe_6-min.png';
+import wireframe8URL from '../../img/images/te_wireframe_8-min.png';
+import final1URL from '../../img/images/te_high_fi_1-min.png';
+import final2URL from '../../img/images/te_high_fi_2-min.png';
+import final3URL from '../../img/images/te_high_fi_3-min.png';
+import final4URL from '../../img/images/te_high_fi_4-min.png';
+import final5URL from '../../img/images/te_high_fi_5-min.png';
+import final6URL from '../../img/images/te_high_fi_6-min.png';
+import final7URL from '../../img/images/te_high_fi_7-min.png';
+import final8URL from '../../img/images/te_high_fi_8-min.png';
+import final9URL from '../../img/images/te_high_fi_9-min.png';
+import final10URL from '../../img/images/te_high_fi_10-min.png';
+import final11URL from '../../img/images/te_high_fi_11-min.png';
+import final12URL from '../../img/images/te_high_fi_12-min.png';
+
 import classes from './style.module.scss';
 
 export function TastyEffectCaseStudy(): React.JSX.Element {
@@ -189,7 +210,7 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
           </ul>
         </div>
       </section>
-      <section>
+      <section className={classes.sitemap}>
         <h2>Sitemap</h2>
         <p>
           With the initial UX research and ideation complete, I created a
@@ -197,8 +218,14 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
           application. This visual representation helps clarify the structure of
           the app and ensures that all essential components are accounted for.
         </p>
+        <img
+          className={classes.sitemap__image}
+          src={sitemapURL}
+          title="Sitemap"
+          alt="Shows a sitemap of the tasty effect application"
+        ></img>
       </section>
-      <section>
+      <section className={classes.userflow}>
         <h2>User Flow</h2>
         <p>
           The User Flow emphasizes three main aspects of the application. Users
@@ -211,8 +238,14 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
           clear and accessible format, ensuring that users have all the
           necessary details to successfully prepare their chosen dish.
         </p>
+        <img
+          className={classes.userflow__image}
+          src={userflowURL}
+          title="User Flow"
+          alt="Shows the primary user flow for a new user that want's to find a recipe."
+        ></img>
       </section>
-      <section>
+      <section className={classes.wireframe}>
         <h2>Wireframes</h2>
         <p>
           The initial low-fidelity wireframes were sketched on paper to quickly
@@ -223,23 +256,184 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
           with iOS interface guidelines, ensuring a more polished and
           user-friendly experience.
         </p>
+        <div className={classes.wireframe__container}>
+          <img
+            className={classes.wireframe__image}
+            src={wireframe1URL}
+            title="Wireframe 1"
+            alt="Shows a hand drawn wireframe of a home screen."
+          ></img>
+          <img
+            className={classes.wireframe__image}
+            src={wireframe2URL}
+            title="Wireframe 2"
+            alt="Shows a hand drawn wireframe of a search screen."
+          ></img>
+          <img
+            className={classes.wireframe__image}
+            src={wireframe3URL}
+            title="Wireframe 3"
+            alt="Shows a hand drawn wireframe of a filter selection."
+          ></img>
+          <img
+            className={classes.wireframe__image}
+            src={wireframe8URL}
+            title="Wireframe 8"
+            alt="Shows a mid fidelity wireframe of a home screen."
+          ></img>
+          <img
+            className={classes.wireframe__image}
+            src={wireframe5URL}
+            title="Wireframe 5"
+            alt="Shows a mid fidelity wireframe of a search screen."
+          ></img>
+          <img
+            className={classes.wireframe__image}
+            src={wireframe6URL}
+            title="Wireframe 6"
+            alt="Shows a mid fidelity wireframe of a filter selection."
+          ></img>
+        </div>
       </section>
       <section>
         <h2>Design System</h2>
         <p>
-          The design aimed to evoke feelings of "Organic," "Healthy," "Fresh,"
-          "Natural," and "Friendly." I selected light green as the primary
-          color, complemented by red and blue accent colors to create a vibrant
-          palette. To maintain a light and fresh aesthetic, I avoided hard edges
-          and borders, opting instead for soft, rounded shapes and only light
+          The design aimed to evoke feelings of <b>Organic</b>, <b>Healthy</b>,{' '}
+          <b>Fresh</b>, <b>Natural</b>, and <b>Friendly</b>. I selected light
+          green as the primary color, complemented by red and blue accent colors
+          to create a vibrant palette.
+        </p>
+        <div className={classes.design__container}>
+          <div className={classes.design__color}>
+            <div className={classes.design__color_column}>
+              <h3>Color Palette</h3>
+              <div
+                className={classes.design__color_item}
+                style={{ background: '#D8E65A' }}
+              >
+                <span>Green Yellow</span>
+                <span>#D8E65A</span>
+              </div>
+            </div>
+            <div className={classes.design__color_column}>
+              <div
+                className={classes.design__color_item}
+                style={{ background: '#E6625A' }}
+              >
+                <span>Red</span>
+                <span>#E6625A</span>
+              </div>
+              <div
+                className={classes.design__color_item}
+                style={{ background: '#5AA0E6' }}
+              >
+                <span>Blue</span>
+                <span>#5AA0E6</span>
+              </div>
+            </div>
+            <div className={classes.design__color_column}>
+              <div
+                className={classes.design__color_item}
+                style={{ background: '#141516', color: '#FAFAF9' }}
+              >
+                <span>Black</span>
+                <span>#141516</span>
+              </div>
+              <div
+                className={classes.design__color_item}
+                style={{ background: '#FAFAF9' }}
+              >
+                <span>Background</span>
+                <span>#FAFAF9</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          To maintain a light and fresh aesthetic, I avoided hard edges and
+          borders, opting instead for soft, rounded shapes and only light
           shadows to distinguish elements from the background. This approach
           enhances the overall user experience, making the interface feel
           approachable and inviting.
         </p>
       </section>
-      <section>
+      <section className={classes.final}>
         <h2>Final Design</h2>
         <p>Here are some screens of the final design.</p>
+        <div className={classes.final__container}>
+          <img
+            className={classes.final__image}
+            src={final1URL}
+            title="Final Design 1"
+            alt="Shows a screen with the final design."
+          ></img>
+          <img
+            className={classes.final__image}
+            src={final2URL}
+            title="Final Design 2"
+            alt="Shows a screen with the final design."
+          ></img>
+          <img
+            className={classes.final__image}
+            src={final3URL}
+            title="Final Design 3"
+            alt="Shows a screen with the final design."
+          ></img>
+          <img
+            className={classes.final__image}
+            src={final4URL}
+            title="Final Design 4"
+            alt="Shows a screen with the final design."
+          ></img>
+          <img
+            className={classes.final__image}
+            src={final5URL}
+            title="Final Design 5"
+            alt="Shows a screen with the final design."
+          ></img>
+          <img
+            className={classes.final__image}
+            src={final6URL}
+            title="Final Design 6"
+            alt="Shows a screen with the final design."
+          ></img>
+          <img
+            className={classes.final__image}
+            src={final7URL}
+            title="Final Design 7"
+            alt="Shows a screen with the final design."
+          ></img>
+          <img
+            className={classes.final__image}
+            src={final8URL}
+            title="Final Design 8"
+            alt="Shows a screen with the final design."
+          ></img>
+          <img
+            className={classes.final__image}
+            src={final9URL}
+            title="Final Design 9"
+            alt="Shows a screen with the final design."
+          ></img>
+          <img
+            className={classes.final__image}
+            src={final10URL}
+            title="Final Design 10"
+            alt="Shows a screen with the final design."
+          ></img>
+          <img
+            className={classes.final__image}
+            src={final11URL}
+            title="Final Design 11"
+            alt="Shows a screen with the final design."
+          ></img>
+          <img
+            className={classes.final__image}
+            src={final12URL}
+            title="Final Design 12"
+            alt="Shows a screen with the final design."
+          ></img>
+        </div>
       </section>
       <section>
         <h2>Challenges & Conclusion</h2>
@@ -250,6 +444,7 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
           narrow perspective on user needs and preferences, potentially
           impacting the insights gathered.
         </p>
+        <br />
         <p>
           In conclusion, while the design process successfully created a
           user-friendly recipe app that prioritizes accessibility and
