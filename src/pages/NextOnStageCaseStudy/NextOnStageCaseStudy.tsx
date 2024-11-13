@@ -447,6 +447,137 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
               ></div>
             </div>
           </div>
+          <div className={classes.design__typo}>
+            <h3>Typography</h3>
+            <div className={classes.design__typo_container}>
+              <div>
+                <div className={classes.design__typo_name}>
+                  <span
+                    style={{
+                      fontFamily: 'Newake',
+                      fontWeight: 'Demo',
+                      fontSize: '3rem',
+                      lineHeight: '3.5rem',
+                    }}
+                  >
+                    Aa
+                  </span>
+                  <hr className={classes.design__typo_divider} />
+                  <span
+                    style={{
+                      fontFamily: 'Newake',
+                      fontWeight: 'Demo',
+                      fontSize: '0.75rem',
+                    }}
+                  >
+                    Newake
+                  </span>
+                </div>
+              </div>
+              <div className={classes.design__typo_list}>
+                <div className={classes.design__typo_list_item}>
+                  <span
+                    style={{
+                      fontFamily: 'Newake',
+                      fontWeight: 'Demo',
+                      fontSize: '64px',
+                    }}
+                  >
+                    Display
+                  </span>
+                  64px
+                </div>
+              </div>
+            </div>
+            <div className={classes.design__typo_container}>
+              <div>
+                <div className={classes.design__typo_name}>
+                  <span
+                    style={{
+                      fontFamily: 'Manrope',
+                      fontWeight: 700,
+                      fontSize: '3rem',
+                      lineHeight: '3.5rem',
+                    }}
+                  >
+                    Aa
+                  </span>
+                  <hr className={classes.design__typo_divider} />
+                  <span
+                    style={{
+                      fontFamily: 'Manrope',
+                      fontWeight: 400,
+                      fontSize: '0.75rem',
+                    }}
+                  >
+                    Manrope
+                  </span>
+                </div>
+              </div>
+              <div className={classes.design__typo_list}>
+                <div className={classes.design__typo_list_item}>
+                  <span
+                    style={{
+                      fontFamily: 'Manrope',
+                      fontWeight: 700,
+                      fontSize: '32px',
+                    }}
+                  >
+                    Headline
+                  </span>
+                  32px
+                </div>
+                <div className={classes.design__typo_list_item}>
+                  <span
+                    style={{
+                      fontFamily: 'Manrope',
+                      fontWeight: 700,
+                      fontSize: '24px',
+                    }}
+                  >
+                    Title
+                  </span>
+                  24px
+                </div>
+                <div className={classes.design__typo_list_item}>
+                  <span
+                    style={{
+                      fontFamily: 'Manrope',
+                      fontWeight: 400,
+                      fontSize: '20px',
+                    }}
+                  >
+                    Subhead
+                  </span>
+                  20px
+                </div>
+                <div className={classes.design__typo_list_item}>
+                  <span
+                    style={{
+                      fontFamily: 'Manrope',
+                      fontWeight: 400,
+                      fontSize: '16px',
+                    }}
+                  >
+                    Body
+                  </span>
+                  16px
+                </div>
+                <div className={classes.design__typo_list_item}>
+                  <span
+                    style={{
+                      fontFamily: 'Manrope',
+                      fontWeight: 400,
+                      fontSize: '14px',
+                    }}
+                  >
+                    Label
+                  </span>
+                  14px
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className={classes.final}>
@@ -530,12 +661,12 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <h2>Challenges & Conclusion</h2>
         <p></p>
         <br />
         <p></p>
-      </section>
+      </section> */}
     </div>
   );
 }

@@ -200,8 +200,8 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8C16 10.2091 14.2091 12 12 12C9.79086 12 8 10.2091 8 8ZM15.7142 12.7125C17.1064 11.6137 18 9.91121 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 9.91121 6.8936 11.6137 8.28579 12.7125C4.60205 14.187 2 17.7896 2 22H4C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H22C22 17.7896 19.3979 14.187 15.7142 12.7125Z"
                   fill="currentColor"
                 />
@@ -411,6 +411,93 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
               >
                 <span>Background</span>
                 <span>#FAFAF9</span>
+              </div>
+            </div>
+          </div>
+          <div className={classes.design__typo}>
+            <h3>Typography</h3>
+            <div className={classes.design__typo_container}>
+              <div>
+                <div className={classes.design__typo_name}>
+                  <span
+                    style={{
+                      fontFamily: 'Inter',
+                      fontWeight: 700,
+                      fontSize: '3rem',
+                      lineHeight: '3.5rem',
+                    }}
+                  >
+                    Aa
+                  </span>
+                  <hr className={classes.design__typo_divider} />
+                  <span
+                    style={{
+                      fontFamily: 'Inter',
+                      fontWeight: 400,
+                      fontSize: '0.75rem',
+                    }}
+                  >
+                    SF Pro
+                  </span>
+                </div>
+              </div>
+              <div className={classes.design__typo_list}>
+                <div className={classes.design__typo_list_item}>
+                  <span
+                    style={{
+                      fontFamily: 'Inter',
+                      fontWeight: 400,
+                      fontSize: '28px',
+                      lineHeight: '34px',
+                      letterSpacing: '-0.62px',
+                    }}
+                  >
+                    Title
+                  </span>
+                  28px
+                </div>
+                <div className={classes.design__typo_list_item}>
+                  <span
+                    style={{
+                      fontFamily: 'Inter',
+                      fontWeight: 500,
+                      fontSize: '17px',
+                      lineHeight: '22px',
+                      letterSpacing: '-0.43px',
+                    }}
+                  >
+                    Headline
+                  </span>
+                  17px
+                </div>
+                <div className={classes.design__typo_list_item}>
+                  <span
+                    style={{
+                      fontFamily: 'Inter',
+                      fontWeight: 400,
+                      fontSize: '17px',
+                      lineHeight: '22px',
+                      letterSpacing: '-0.43px',
+                    }}
+                  >
+                    Body
+                  </span>
+                  17px
+                </div>
+                <div className={classes.design__typo_list_item}>
+                  <span
+                    style={{
+                      fontFamily: 'Inter',
+                      fontWeight: 400,
+                      fontSize: '15px',
+                      lineHeight: '20px',
+                      letterSpacing: '-0.23px',
+                    }}
+                  >
+                    Subhead
+                  </span>
+                  15px
+                </div>
               </div>
             </div>
           </div>
