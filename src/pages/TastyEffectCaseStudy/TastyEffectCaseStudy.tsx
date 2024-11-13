@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './style.module.scss';
+// import classes from './style.module.scss';
 
 export function TastyEffectCaseStudy(): React.JSX.Element {
   return (
