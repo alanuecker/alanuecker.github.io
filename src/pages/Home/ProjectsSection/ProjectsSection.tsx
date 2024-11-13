@@ -5,6 +5,7 @@ import { Button } from '../../../components/Button';
 import DiamondIcon from '../../../img/diamond.svg?react';
 import GitHub from '../../../img/icons/github.svg?react';
 import Figma from '../../../img/icons/figma.svg?react';
+import Document from '../../../img/icons/document.svg?react';
 import nextOnStageURL from '../../../img/images/nextonstage.png';
 import tastyEffectURL from '../../../img/images/tastyeffect.png';
 
@@ -62,7 +63,13 @@ export function ProjectsSection(): React.JSX.Element {
             title="Thumbnail"
             alt="Shows screenshot from the Next on Stage website project"
           ></img>
-          <p>-- Case Study comming soon. --</p>
+          <div className={classes.button_container}>
+            <Button
+              to="/projects/next-on-stage"
+              title="Case Study"
+              icon={<Document />}
+            />
+          </div>
         </div>
       </div>
       <div className={classes.item}>
@@ -88,7 +95,13 @@ export function ProjectsSection(): React.JSX.Element {
             title="Thumbnail"
             alt="Shows screenshot from the Tasty Effect app project"
           ></img>
-          <p>-- Case Study comming soon. --</p>
+          <div className={classes.button_container}>
+            <Button
+              to="/projects/tasty-effect"
+              title="Case Study"
+              icon={<Document />}
+            />
+          </div>
         </div>
       </div>
       <div className={classes.item}>

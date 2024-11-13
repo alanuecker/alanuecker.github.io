@@ -1,7 +1,7 @@
 @use "./styles/mixins.scss";
 
 @font-face {
-  font-family: "Cabin", sans-serif;
+  font-family: "Cabin";
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: "Cabin", sans-serif;
+  font-family: "Cabin";
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -21,13 +21,74 @@
 }
 
 @font-face {
-  font-family: "Cabin", sans-serif;
+  font-family: "Cabin";
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   font-display: swap;
   src: url("./fonts/Cabin-Bold-subset.woff2") format("woff2");
+}
+
+
+@font-face {
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-display: swap;
+  src: url("./fonts/Inter-Regular-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-display: swap;
+  src: url("./fonts/Inter-SemiBold-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-display: swap;
+  src: url("./fonts/Inter-Bold-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-display: swap;
+  src: url("./fonts/Manrope-Regular-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-display: swap;
+  src: url("./fonts/Manrope-Bold-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Newake";
+  font-optical-sizing: auto;
+  font-weight: "Demo";
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-display: swap;
+  src: url("./fonts/Newake-Font-Demo-subset.woff2") format("woff2");
 }
 
 body {

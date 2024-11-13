@@ -8,7 +8,8 @@ import { Home } from './pages/Home';
 import { Imprint } from './pages/Imprint';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { ErrorPage } from './pages/ErrorPage';
-// import { TastyEffectCaseStudy } from './pages/TastyEffectCaseStudy';
+import { TastyEffectCaseStudy } from './pages/TastyEffectCaseStudy';
+import { NextOnStageCaseStudy } from './pages/NextOnStageCaseStudy';
 
 import './main.scss';
 import 'modern-normalize/modern-normalize.css';
@@ -30,10 +31,14 @@ const router = createHashRouter([
         path: '/privacy-policy',
         element: <PrivacyPolicy />,
       },
-      // {
-      //   path: '/projects/tasty-effect',
-      //   element: <TastyEffectCaseStudy />,
-      // },
+      {
+        path: '/projects/tasty-effect',
+        element: <TastyEffectCaseStudy />,
+      },
+      {
+        path: '/projects/next-on-stage',
+        element: <NextOnStageCaseStudy />,
+      },
     ],
   },
 ]);

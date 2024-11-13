@@ -10,6 +10,12 @@
   }
 }
 
+@mixin lg {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
 @mixin hover {
   & {
     box-shadow:
