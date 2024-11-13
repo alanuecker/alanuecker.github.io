@@ -68,6 +68,7 @@ export function ProjectsSection(): React.JSX.Element {
               to="/projects/next-on-stage"
               title="Case Study"
               icon={<Document />}
+              external={false}
             />
           </div>
         </div>
@@ -100,6 +101,7 @@ export function ProjectsSection(): React.JSX.Element {
               to="/projects/tasty-effect"
               title="Case Study"
               icon={<Document />}
+              external={false}
             />
           </div>
         </div>
