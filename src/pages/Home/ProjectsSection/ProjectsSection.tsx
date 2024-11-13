@@ -63,7 +63,13 @@ export function ProjectsSection(): React.JSX.Element {
             title="Thumbnail"
             alt="Shows screenshot from the Next on Stage website project"
           ></img>
-          <p>-- Case Study comming soon. --</p>
+          <div className={classes.button_container}>
+            <Button
+              to="/projects/next-on-stage"
+              title="Case Study"
+              icon={<Document />}
+            />
+          </div>
         </div>
       </div>
       <div className={classes.item}>

@@ -20,7 +20,7 @@ import final9URL from '../../img/images/te_high_fi_9-min.png';
 import final10URL from '../../img/images/te_high_fi_10-min.png';
 import final11URL from '../../img/images/te_high_fi_11-min.png';
 import final12URL from '../../img/images/te_high_fi_12-min.png';
-import profilePicURL from '../../img/images/te_profile_picture.png';
+import profilePicURL from '../../img/images/te_user.png';
 import tastyEffectURL from '../../img/images/tastyeffect.png';
 
 import classes from './style.module.scss';

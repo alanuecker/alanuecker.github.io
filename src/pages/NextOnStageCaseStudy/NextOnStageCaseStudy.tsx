@@ -1,55 +1,59 @@
 import React from 'react';
 
-import sitemapURL from '../../img/images/te_sitemap-min.png';
-import userflowURL from '../../img/images/te_userflow-min.png';
-import wireframe1URL from '../../img/images/te_wireframe_1-min.png';
-import wireframe2URL from '../../img/images/te_wireframe_2-min.png';
-import wireframe3URL from '../../img/images/te_wireframe_3-min.png';
-import wireframe5URL from '../../img/images/te_wireframe_5-min.png';
-import wireframe6URL from '../../img/images/te_wireframe_6-min.png';
-import wireframe8URL from '../../img/images/te_wireframe_8-min.png';
-import final1URL from '../../img/images/te_high_fi_1-min.png';
-import final2URL from '../../img/images/te_high_fi_2-min.png';
-import final3URL from '../../img/images/te_high_fi_3-min.png';
-import final4URL from '../../img/images/te_high_fi_4-min.png';
-import final5URL from '../../img/images/te_high_fi_5-min.png';
-import final6URL from '../../img/images/te_high_fi_6-min.png';
-import final7URL from '../../img/images/te_high_fi_7-min.png';
-import final8URL from '../../img/images/te_high_fi_8-min.png';
-import final9URL from '../../img/images/te_high_fi_9-min.png';
-import final10URL from '../../img/images/te_high_fi_10-min.png';
-import final11URL from '../../img/images/te_high_fi_11-min.png';
-import final12URL from '../../img/images/te_high_fi_12-min.png';
-import profilePicURL from '../../img/images/te_profile_picture.png';
-import tastyEffectURL from '../../img/images/tastyeffect.png';
+import sitemapURL from '../../img/images/nos_sitemap.png';
+import userflowURL from '../../img/images/nos_userflow.png';
+import wireframe1URL from '../../img/images/nos_wireframe_1.png';
+import wireframe2URL from '../../img/images/nos_wireframe_2.png';
+import wireframe3URL from '../../img/images/nos_wireframe_3.png';
+import wireframe4URL from '../../img/images/nos_wireframe_4.png';
+import wireframe5URL from '../../img/images/nos_wireframe_5.png';
+import wireframe6URL from '../../img/images/nos_wireframe_6.png';
+import moodBoardURL from '../../img/images/nos_mood_board.png';
+import final1URL from '../../img/images/nos_high_fi_1.png';
+import final2URL from '../../img/images/nos_high_fi_2.png';
+import final3URL from '../../img/images/nos_high_fi_3.png';
+import final4URL from '../../img/images/nos_high_fi_4.png';
+import final5URL from '../../img/images/nos_high_fi_5.png';
+import final6URL from '../../img/images/nos_high_fi_6.png';
+import final7URL from '../../img/images/nos_high_fi_7.png';
+import final8URL from '../../img/images/nos_high_fi_8.png';
+import final9URL from '../../img/images/nos_high_fi_9.png';
+import profilePicURL from '../../img/images/nos_user.png';
+import nextOnStageURL from '../../img/images/nextonstage.png';
+import noiseMapURL from '../../img/images/nos_noise_map.png';
+import backgroundURL from '../../img/images/nos_background.png';
 
 import classes from './style.module.scss';
 
-export function TastyEffectCaseStudy(): React.JSX.Element {
+export function NextOnStageCaseStudy(): React.JSX.Element {
   return (
     <div className={classes.root}>
       <section className={classes.hero}>
         <div className={classes.hero__container}>
           <img
             className={classes.hero__image}
-            src={tastyEffectURL}
+            src={nextOnStageURL}
             title="Hero Image"
-            alt="Shows screenshot from the Tasty Effect app project"
+            alt="Shows screenshot from the NEXT ON STAGE website project"
           ></img>
         </div>
-        <h1>Tasty Effect</h1>
+        <h1>NEXT ON STAGE</h1>
         <div className={classes.hero__description}>
           <p>
-            This project was created during a UX/UI bootcamp, where we were
-            tasked with researching and designing an application or website that
-            incorporates at least one aspect of accessibility.
+            This is the final project for a UX/UI bootcamp, where we were tasked
+            with researching a topic and designing an application or website.
+            Inspired by my experience moving to a new city, I decided to address
+            the challenge of finding reliable information about smaller, local
+            concerts. With event details often scattered across Instagram,
+            Telegram, and physical posters, especially newcomers struggle to
+            stay informed.
           </p>
           <p>
-            I chose to focus on recipe apps and websites, as I use them
-            frequently and see significant potential for customization based on
-            users' skill levels, preferences, and physical abilities. Many
-            top-ranking recipe websites tend to hide the actual recipe beneath
-            layers of images and text, creating a frustrating user experience.
+            To solve this, I developed “Next on Stage,” a website framework
+            designed to bring event information into one accessible space and
+            empower local communities to easily promote their shows. This case
+            study will walk through the research, design decisions, and user
+            experience optimizations that shaped this solution.
           </p>
         </div>
         <div className={classes.hero__info}>
@@ -79,21 +83,26 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
         <div>
           <h3>Problem</h3>
           <p>
-            Users often struggle to quickly access essential information, such
-            as ingredients and instructions, on recipe websites. Additionally,
-            there is also a noticeable lack of platforms that allow users to
-            tailor the skill level, ingredients, and instructional formats to
-            their individual needs.
+            Newcomers to a city often struggle to find reliable information on
+            small concerts and the local event scene. Details about events are
+            scattered across multiple platforms like Instagram, Telegram
+            channels, and physical flyers, making it difficult to stay up to
+            date. For those looking to go out on a specific date, finding
+            relevant event information requires significant time and effort,
+            often resulting in missed opportunities and frustration.
           </p>
         </div>
         <div>
           <h3>Solution</h3>
           <p>
-            The solution is to develop a user-friendly recipe app that makes
-            ingredients and instructions easily accessible, personalizes recipes
-            based on individual user preferences, and provides multiple
-            instructional formats to accommodate different learning styles and
-            skill levels.
+            The solution is a website framework designed to empower local
+            communities by providing a dedicated platform for event promotion.
+            This website will allow organizers to easily list their events while
+            offering attendees a central hub for up-to-date information. In
+            addition to event details, the platform will include essential
+            information about venues, accessibility features, and awareness
+            policies, ensuring that users have everything they need to plan
+            their outing with confidence.
           </p>
         </div>
       </section>
@@ -136,44 +145,43 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
       <section>
         <h2>Research & Insights</h2>
         <p>
-          The first step was to developed a set of survey and interview
-          questions to gather insights from potential users. The focus was on
-          understanding user behavior and preferences, particularly around these
-          key themes:
+          The first step was to develop a set of interview questions aimed at
+          gathering insights from individuals who organize smaller, local
+          events. I wanted to understand their methods for promoting events and
+          identify factors that influence attendee turnout.
         </p>
-        <ul>
-          <li>How do dietary restrictions influence your recipe search?</li>
-          <li>
-            What type of recipe format do you prefer: text, images, or video?
-          </li>
-          <li>What typically leads you to skip a recipe after opening it?</li>
-        </ul>
-        <h3>Key Insights</h3>
         <p>
-          Through the survey and interviews, I gathered valuable insights into
-          user behavior and preferences when interacting with recipe websites
-          and apps. These findings highlighted several pain points and
-          opportunities for improvement:
+          For the quantitative research, I conducted a survey with concert
+          attendees to learn about their experiences with local show promotion
+          and the types of information they prioritize when deciding whether to
+          attend an event. This combination of qualitative and quantitative data
+          helped build a well-rounded understanding of current challenges and
+          user needs.
         </p>
+        <h3>Key Insights</h3>
         <ul>
           <li>
-            Ingredients and instructions are often difficult to locate on many
-            websites, leading to frustration and a higher exit rate.
+            Information Overload: 47% of survey participants felt overwhelmed by
+            the number of sources for concert information, making it challenging
+            to keep track of events.
           </li>
           <li>
-            Users frequently experiment with recipes by substituting ingredients
-            based on availability or dietary needs.
+            Missed Opportunities: 27% of respondents reported missing out on
+            shows due to insufficient or delayed promotion, with many seeing
+            event posts only after the event had passed.
           </li>
           <li>
-            Most platforms only present recipes in a single format (text,
-            images, or video), limiting flexibility for different learning
+            Venue Information Gaps: Many attendees expressed a need for more
+            comprehensive venue information, including details on atmosphere and
+            accessibility, to help them decide whether a venue aligns with their
             preferences.
           </li>
-          <li>
-            Images significantly influence recipe choice, as users are often
-            drawn to visually appealing dishes.
-          </li>
         </ul>
+        <p>
+          These insights underscored the need for a centralized platform that
+          could simplify event discovery while offering crucial details about
+          venues and accessibility.
+        </p>
       </section>
       <section className={classes.persona}>
         <h2 className={classes.persona__title}>User Persona</h2>
@@ -190,7 +198,7 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
             alt="Shows profile picture for the persona"
           ></img>
           <div className={classes.persona__info}>
-            <h3>Laura</h3>
+            <h3>Alex</h3>
             <div className={classes.persona__info_row}>
               <svg
                 width="24"
@@ -206,7 +214,7 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
                   fill="currentColor"
                 />
               </svg>
-              36
+              28
             </div>
             <div className={classes.persona__info_row}>
               <svg
@@ -221,7 +229,7 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
                   fill="currentColor"
                 />
               </svg>
-              Physical Therapist
+              Bookstore Clerk
             </div>
             <div className={classes.persona__info_row}>
               <svg
@@ -242,35 +250,39 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
           <div className={classes.persona__bio}>
             <h3>Bio</h3>
             <p>
-              Laura is a physical therapist based in Berlin. She likes to
-              prepare 3-4 meals a week, exploring various recipes and trying out
-              some modifications. Due to her gluten intolerance, she focuses on
-              gluten-free recipes and occasionally prepares vegan dishes to
-              accommodate her friends' dietary preferences. Confident in her
-              cooking skills, Laura enjoys experimenting in the kitchen while
-              balancing her professional and personal life.
+              Alex is a 28-year-old bookstore clerk who recently moved to
+              Leipzig and is passionate about exploring the local music scene.
+              They enjoy attending smaller, niche concerts but find it
+              challenging to discover such events in a new city. Outside of
+              work, Alex loves spending time in local cafes, art galleries,
+              seeking to immerse themselves in the city's vibrant cultural
+              scene. They are eager to meet new people, make friends with
+              similar interests, and feel more connected to their new community.
             </p>
           </div>
           <div className={classes.persona__goals}>
             <h3>Goals</h3>
             <ul>
-              <li>Seeks recipes that are quick and easy to prepare</li>
               <li>
-                Looks for new recipes and cooking tips to have more variety in
-                meals
+                Find reliable source for information about small concerts and
+                events
               </li>
-              <li>Has to accommodate her gluten-free diet</li>
+              <li>Support local artists and venues</li>
+              <li>
+                Meet like-minded people and build social circle in new city
+              </li>
             </ul>
           </div>
           <div className={classes.persona__pain}>
             <h3>Pain Points</h3>
             <ul>
-              <li>There are a lot of results on Google for the same dish</li>
               <li>
-                Websites are filled with long text before the actual recipe
+                Feels overwhelmed by the amount of local event websites and
+                social media channels
               </li>
               <li>
-                Finding gluten-free recipes that also cater to her friends
+                Difficult to find information on smaller, underground concerts
+                and events
               </li>
             </ul>
           </div>
@@ -282,45 +294,48 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
           With the initial UX research and ideation complete, I created a
           sitemap to outline the key pages and functionalities of the
           application. This visual representation helps clarify the structure of
-          the app and ensures that all essential components are accounted for.
+          the website and ensures that all essential components are accounted
+          for.
         </p>
         <img
           className={classes.sitemap__image}
           src={sitemapURL}
           title="Sitemap"
-          alt="Shows a sitemap of the tasty effect application"
+          alt="Shows a sitemap of the next on stage website"
         ></img>
       </section>
       <section className={classes.userflow}>
         <h2>User Flow</h2>
         <p>
-          The User Flow emphasizes three main aspects of the application. Users
-          are welcomed with a comprehensive onboarding process designed for
-          personalization, allowing them to define their preferences and dietary
-          restrictions right from the start. The search and filter page offers a
-          wide variety of options and categories, enabling users to narrow down
-          their search for an appropriate recipe. Each recipe page presents
-          instructions, cookware requirements, and ingredient information in a
-          clear and accessible format, ensuring that users have all the
-          necessary details to successfully prepare their chosen dish.
+          The User Flow outlines the key functionalities of the website, guiding
+          users through a seamless event discovery experience. Starting on the
+          homepage, users can use the search and filter options to find events
+          that match their interests or a specific date. Each event page
+          provides essential details and connects directly to the organizer and
+          venue pages, giving users a fuller picture of the event's atmosphere,
+          accessibility, and policies. Additionally, a report feature enables
+          users to flag events, organizers, or venues if issues arise, fostering
+          a respectful and trustworthy community.
         </p>
         <img
           className={classes.userflow__image}
           src={userflowURL}
           title="User Flow"
-          alt="Shows the primary user flow for a new user that want's to find a recipe."
+          alt="Shows the primary user flow for navigating the website."
         ></img>
       </section>
       <section className={classes.wireframe}>
         <h2>Wireframes</h2>
         <p>
-          The initial low-fidelity wireframes were sketched on paper to quickly
-          explore layout concepts and page structures. After testing these
-          sketches with a few users, I transferred the designs to Figma for
-          further development. The mid-fidelity wireframes were created to test
-          the information architecture and were designed to align more closely
-          with iOS interface guidelines, ensuring a more polished and
-          user-friendly experience.
+          The initial low-fidelity wireframes were sketched on paper, allowing
+          for quick exploration of layout ideas and page structures. After
+          conducting brief user tests with these sketches to gather initial
+          feedback, I moved the designs into Figma to refine and iterate
+          digitally. Mid-fidelity wireframes were then developed to focus on
+          testing the information architecture, ensuring that users could easily
+          navigate between events, venues, and organizer details. This step
+          helped validate the structure before adding visual details in the
+          high-fidelity prototypes.
         </p>
         <div className={classes.wireframe__container}>
           <img
@@ -333,193 +348,193 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
             className={classes.wireframe__image}
             src={wireframe2URL}
             title="Wireframe 2"
-            alt="Shows a hand drawn wireframe of a search screen."
+            alt="Shows a hand drawn wireframe of a event page."
           ></img>
           <img
             className={classes.wireframe__image}
             src={wireframe3URL}
             title="Wireframe 3"
-            alt="Shows a hand drawn wireframe of a filter selection."
+            alt="Shows a hand drawn wireframe of a form."
           ></img>
           <img
             className={classes.wireframe__image}
-            src={wireframe8URL}
-            title="Wireframe 8"
+            src={wireframe4URL}
+            title="Wireframe 4"
             alt="Shows a mid fidelity wireframe of a home screen."
           ></img>
           <img
             className={classes.wireframe__image}
             src={wireframe5URL}
             title="Wireframe 5"
-            alt="Shows a mid fidelity wireframe of a search screen."
+            alt="Shows a mid fidelity wireframe of a event page."
           ></img>
           <img
             className={classes.wireframe__image}
             src={wireframe6URL}
             title="Wireframe 6"
-            alt="Shows a mid fidelity wireframe of a filter selection."
+            alt="Shows a mid fidelity wireframe of a form."
           ></img>
         </div>
       </section>
-      <section>
+      <section className={classes.design}>
         <h2>Design System</h2>
         <p>
-          The design aimed to evoke feelings of <b>Organic</b>, <b>Healthy</b>,{' '}
-          <b>Fresh</b>, <b>Natural</b>, and <b>Friendly</b>. I selected light
-          green as the primary color, complemented by red and blue accent colors
-          to create a vibrant palette.
+          The design captures the rebellious and bold spirit of the underground
+          music scene by leveraging dynamic elements like bold typography,
+          layered graphics, and striking gradients. The color palette is
+          intentionally limited to a foreground, background, and elevation color
+          to create contrast and maintain focus. Gradients and abstract
+          background textures bring a sense of energy and noise, reflecting the
+          raw and vibrant feel of smaller local concerts.
         </p>
+        <h3>Mood Board</h3>
+        <p>
+          The mood board draws inspiration from images and flyers of smaller
+          underground shows, aiming to capture their raw, rebellious energy and
+          translate it into the final design.
+        </p>
+        <img
+          className={classes.design__mood_board_image}
+          src={moodBoardURL}
+          title="Mood Board"
+          alt="Shows a mood board with images from concert flyers and live music in underground locations."
+        ></img>
         <div className={classes.design__container}>
           <div className={classes.design__color}>
-            <div className={classes.design__color_column}>
-              <h3>Color Palette</h3>
+            <h3>Color Palette</h3>
+            <div className={classes.design__color_row}>
               <div
                 className={classes.design__color_item}
-                style={{ background: '#D8E65A' }}
-              >
-                <span>Green Yellow</span>
-                <span>#D8E65A</span>
-              </div>
-            </div>
-            <div className={classes.design__color_column}>
-              <div
-                className={classes.design__color_item}
-                style={{ background: '#E6625A' }}
-              >
-                <span>Red</span>
-                <span>#E6625A</span>
-              </div>
-              <div
-                className={classes.design__color_item}
-                style={{ background: '#5AA0E6' }}
-              >
-                <span>Blue</span>
-                <span>#5AA0E6</span>
-              </div>
-            </div>
-            <div className={classes.design__color_column}>
-              <div
-                className={classes.design__color_item}
-                style={{ background: '#141516', color: '#FAFAF9' }}
+                style={{ background: '#0F1112', color: '#FFF' }}
               >
                 <span>Black</span>
-                <span>#141516</span>
+                <span>#0F1112</span>
               </div>
               <div
                 className={classes.design__color_item}
-                style={{ background: '#FAFAF9' }}
+                style={{ background: '#F2F2F2' }}
               >
                 <span>Background</span>
-                <span>#FAFAF9</span>
+                <span>#F2F2F2</span>
+              </div>
+              <div
+                className={classes.design__color_item}
+                style={{ background: '#FFFFFF' }}
+              >
+                <span>Elevation</span>
+                <span>#FFFFFF</span>
               </div>
             </div>
           </div>
+          <div className={classes.design__color}>
+            <h3>Gradients & Background</h3>
+            <div className={classes.design__color_row}>
+              <div
+                className={classes.design__color_item}
+                style={{
+                  backgroundImage: `url(${noiseMapURL}), linear-gradient(90deg, #D92625, #F26241, #F2C879)`,
+                }}
+              ></div>
+              <div
+                className={classes.design__color_item}
+                style={{
+                  backgroundImage: `url(${noiseMapURL}), linear-gradient(90deg, #7D6BBF, #F28DC4 39%, #F2B077 75%, #F2CC85)`,
+                }}
+              ></div>
+              <div
+                className={classes.design__color_item}
+                style={{ backgroundImage: `url(${backgroundURL})` }}
+              ></div>
+            </div>
+          </div>
         </div>
-        <p>
-          To maintain a light and fresh aesthetic, I avoided hard edges and
-          borders, opting instead for soft, rounded shapes and only light
-          shadows to distinguish elements from the background. This approach
-          enhances the overall user experience, making the interface feel
-          approachable and inviting.
-        </p>
       </section>
       <section className={classes.final}>
         <h2>Final Design</h2>
-        <p>Here are some screens of the final design.</p>
+        <p>
+          The final design focuses on providing users with comprehensive
+          features for discovering and attending local events. The homepage
+          highlights popular upcoming events, followed by a complete list that
+          users can narrow down using search and filter options. Each event page
+          prominently displays key details and showcases event artwork, with
+          additional information available further down the page. Venue pages
+          offer images to convey the atmosphere, along with FAQs addressing
+          common attendee questions.
+        </p>
+        <p>
+          To support the local community, space is dedicated to organizers and
+          collectives, helping users make informed decisions about events. A
+          submission feature allows anyone to add events, with moderation in
+          place to maintain quality. Additionally, a report function enables
+          users to flag issues with events, organizers, or venues, fostering a
+          safe and trustworthy platform.
+        </p>
         <div className={classes.final__container}>
-          <img
-            className={classes.final__image}
-            src={final1URL}
-            title="Final Design 1"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final2URL}
-            title="Final Design 2"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final3URL}
-            title="Final Design 3"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final4URL}
-            title="Final Design 4"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final5URL}
-            title="Final Design 5"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final6URL}
-            title="Final Design 6"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final7URL}
-            title="Final Design 7"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final8URL}
-            title="Final Design 8"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final9URL}
-            title="Final Design 9"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final10URL}
-            title="Final Design 10"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final11URL}
-            title="Final Design 11"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final12URL}
-            title="Final Design 12"
-            alt="Shows a screen with the final design."
-          ></img>
+          <div className={classes.final__column}>
+            <img
+              className={classes.final__image}
+              src={final1URL}
+              title="Final Design 1"
+              alt="Shows a screen with the final design."
+            ></img>
+            <img
+              className={classes.final__image}
+              src={final2URL}
+              title="Final Design 2"
+              alt="Shows a screen with the final design."
+            ></img>
+            <img
+              className={classes.final__image}
+              src={final3URL}
+              title="Final Design 3"
+              alt="Shows a screen with the final design."
+            ></img>
+            <img
+              className={classes.final__image}
+              src={final4URL}
+              title="Final Design 4"
+              alt="Shows a screen with the final design."
+            ></img>
+          </div>
+          <div className={classes.final__column}>
+            <img
+              className={classes.final__image}
+              src={final5URL}
+              title="Final Design 5"
+              alt="Shows a screen with the final design."
+            ></img>
+            <img
+              className={classes.final__image}
+              src={final6URL}
+              title="Final Design 6"
+              alt="Shows a screen with the final design."
+            ></img>
+            <img
+              className={classes.final__image}
+              src={final7URL}
+              title="Final Design 7"
+              alt="Shows a screen with the final design."
+            ></img>
+            <img
+              className={classes.final__image}
+              src={final8URL}
+              title="Final Design 8"
+              alt="Shows a screen with the final design."
+            ></img>
+            <img
+              className={classes.final__image}
+              src={final9URL}
+              title="Final Design 9"
+              alt="Shows a screen with the final design."
+            ></img>
+          </div>
         </div>
       </section>
       <section>
         <h2>Challenges & Conclusion</h2>
-        <p>
-          One of the main challenges faced during this project was the limited
-          sample size of the survey and interview participants, as only eight
-          individuals provided feedback. This lack of information resulted in a
-          narrow perspective on user needs and preferences, potentially
-          impacting the insights gathered.
-        </p>
+        <p></p>
         <br />
-        <p>
-          In conclusion, while the design process successfully created a
-          user-friendly recipe app that prioritizes accessibility and
-          personalization, expanding the sample size for future research would
-          significantly enhance the quality of user insights and inform more
-          robust design decisions. This experience underscored the importance of
-          thorough user research and its critical role in developing a product
-          that truly meets the needs of its target audience.
-        </p>
+        <p></p>
       </section>
     </div>
   );
