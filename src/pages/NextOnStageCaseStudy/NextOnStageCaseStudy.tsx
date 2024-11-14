@@ -22,12 +22,13 @@ import profilePicURL from '../../img/images/nos_user.png';
 import nextOnStageURL from '../../img/images/nextonstage.png';
 import noiseMapURL from '../../img/images/nos_noise_map.png';
 import backgroundURL from '../../img/images/nos_background.png';
+import { CaseStudyPage } from '../../components/CaseStudyPage';
 
 import classes from './style.module.scss';
 
 export function NextOnStageCaseStudy(): React.JSX.Element {
   return (
-    <div className={classes.root}>
+    <CaseStudyPage>
       <section className={classes.hero}>
         <div className={classes.hero__container}>
           <img
@@ -387,20 +388,22 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
           background textures bring a sense of energy and noise, reflecting the
           raw and vibrant feel of smaller local concerts.
         </p>
-        <h3>Mood Board</h3>
-        <p>
-          The mood board draws inspiration from images and flyers of smaller
-          underground shows, aiming to capture their raw, rebellious energy and
-          translate it into the final design.
-        </p>
-        <img
-          className={classes.design__mood_board_image}
-          src={moodBoardURL}
-          title="Mood Board"
-          alt="Shows a mood board with images from concert flyers and live music in underground locations."
-        ></img>
         <div className={classes.design__container}>
-          <div className={classes.design__color}>
+          <div className={classes.design__item}>
+            <h3>Mood Board</h3>
+            <p>
+              The mood board draws inspiration from images and flyers of smaller
+              underground shows, aiming to capture their raw, rebellious energy
+              and translate it into the final design.
+            </p>
+            <img
+              className={classes.design__mood_board_image}
+              src={moodBoardURL}
+              title="Mood Board"
+              alt="Shows a mood board with images from concert flyers and live music in underground locations."
+            ></img>
+          </div>
+          <div className={classes.design__item}>
             <h3>Color Palette</h3>
             <div className={classes.design__color_row}>
               <div
@@ -426,7 +429,7 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
               </div>
             </div>
           </div>
-          <div className={classes.design__color}>
+          <div className={classes.design__item}>
             <h3>Gradients & Background</h3>
             <div className={classes.design__color_row}>
               <div
@@ -447,9 +450,9 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
               ></div>
             </div>
           </div>
-          <div className={classes.design__typo}>
+          <div className={classes.design__item}>
             <h3>Typography</h3>
-            <div className={classes.design__typo_container}>
+            <div className={classes.design__typo_row}>
               <div>
                 <div className={classes.design__typo_name}>
                   <span
@@ -477,6 +480,7 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
               <div className={classes.design__typo_list}>
                 <div className={classes.design__typo_list_item}>
                   <span
+                    className={classes.design__typo_responsive}
                     style={{
                       fontFamily: 'Newake',
                       fontWeight: 'Demo',
@@ -489,7 +493,7 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
                 </div>
               </div>
             </div>
-            <div className={classes.design__typo_container}>
+            <div className={classes.design__typo_row}>
               <div>
                 <div className={classes.design__typo_name}>
                   <span
@@ -667,6 +671,6 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
         <br />
         <p></p>
       </section> */}
-    </div>
+    </CaseStudyPage>
   );
 }

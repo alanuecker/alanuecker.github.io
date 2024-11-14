@@ -22,12 +22,13 @@ import final11URL from '../../img/images/te_high_fi_11-min.png';
 import final12URL from '../../img/images/te_high_fi_12-min.png';
 import profilePicURL from '../../img/images/te_user.png';
 import tastyEffectURL from '../../img/images/tastyeffect.png';
+import { CaseStudyPage } from '../../components/CaseStudyPage';
 
 import classes from './style.module.scss';
 
 export function TastyEffectCaseStudy(): React.JSX.Element {
   return (
-    <div className={classes.root}>
+    <CaseStudyPage>
       <section className={classes.hero}>
         <div className={classes.hero__container}>
           <img
@@ -597,7 +598,6 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
           narrow perspective on user needs and preferences, potentially
           impacting the insights gathered.
         </p>
-        <br />
         <p>
           In conclusion, while the design process successfully created a
           user-friendly recipe app that prioritizes accessibility and
@@ -608,6 +608,6 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
           that truly meets the needs of its target audience.
         </p>
       </section>
-    </div>
+    </CaseStudyPage>
   );
 }
