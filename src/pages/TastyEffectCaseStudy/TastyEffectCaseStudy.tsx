@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import sitemapURL from '../../img/images/te_sitemap-min.png';
 import userflowURL from '../../img/images/te_userflow-min.png';
@@ -23,10 +23,68 @@ import final12URL from '../../img/images/te_high_fi_12-min.png';
 import profilePicURL from '../../img/images/te_user.png';
 import tastyEffectURL from '../../img/images/tastyeffect.png';
 import { CaseStudyPage } from '../../components/CaseStudyPage';
+import { Lightbox } from '../../components/Lightbox';
+import { Image } from '../../components/Image';
 
 import classes from './style.module.scss';
 
+const wireframeSlides = [
+  {
+    src: wireframe1URL,
+    alt: 'Shows a hand drawn wireframe of a home screen.',
+  },
+  {
+    src: wireframe2URL,
+    alt: 'Shows a hand drawn wireframe of a search screen.',
+  },
+  {
+    src: wireframe3URL,
+    alt: 'Shows a hand drawn wireframe of a filter selection.',
+  },
+  {
+    src: wireframe8URL,
+    alt: 'Shows a mid fidelity wireframe of a home screen.',
+  },
+  {
+    src: wireframe5URL,
+    alt: 'Shows a mid fidelity wireframe of a search screen.',
+  },
+  {
+    src: wireframe6URL,
+    alt: 'Shows a mid fidelity wireframe of a filter selection.',
+  },
+];
+
+const finalSlides = [
+  { src: final10URL, alt: 'Shows the home screen' },
+  { src: final11URL, alt: 'Shows the profile screen' },
+  { src: final12URL, alt: 'Shows the profile screen' },
+  { src: final8URL, alt: 'Shows the recipe screen and required cookware' },
+  { src: final7URL, alt: 'Shows the recipe screen and required ingredients' },
+  { src: final9URL, alt: 'Shows the recipe screen and the instructions' },
+  {
+    src: final3URL,
+    alt: 'Shows the search screen with some filter suggestions',
+  },
+  { src: final2URL, alt: 'Shows the search screen with results' },
+  {
+    src: final1URL,
+    alt: 'Shows the filters subpage of the search screen',
+  },
+  { src: final4URL, alt: 'Shows account creation' },
+  { src: final5URL, alt: 'Shows the diet selection during account creation' },
+  {
+    src: final6URL,
+    alt: 'Shows cooking skill selection during account creation',
+  },
+];
+
 export function TastyEffectCaseStudy(): React.JSX.Element {
+  const [wireframeIndex, setWireframeIndex] = useState(-1);
+  const [finalIndex, setFinalIndex] = useState(-1);
+  const [userFlowOpen, setUserFlowOpen] = useState(false);
+  const [siteMapOpen, setSiteMapOpen] = useState(false);
+
   return (
     <CaseStudyPage>
       <section className={classes.hero}>
@@ -285,12 +343,24 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
           application. This visual representation helps clarify the structure of
           the app and ensures that all essential components are accounted for.
         </p>
-        <img
+        <Lightbox
+          slides={[
+            {
+              src: sitemapURL,
+              alt: 'Shows a sitemap of the tasty effect application',
+            },
+          ]}
+          open={siteMapOpen}
+          close={() => setSiteMapOpen(false)}
+          theme="light"
+        />
+        <Image
           className={classes.sitemap__image}
           src={sitemapURL}
           title="Sitemap"
           alt="Shows a sitemap of the tasty effect application"
-        ></img>
+          onClick={() => setSiteMapOpen(true)}
+        />
       </section>
       <section className={classes.userflow}>
         <h2>User Flow</h2>
@@ -305,12 +375,24 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
           clear and accessible format, ensuring that users have all the
           necessary details to successfully prepare their chosen dish.
         </p>
-        <img
+        <Lightbox
+          slides={[
+            {
+              src: userflowURL,
+              alt: `Shows the primary user flow for a new user that want's to find a recipe.`,
+            },
+          ]}
+          open={userFlowOpen}
+          close={() => setUserFlowOpen(false)}
+          theme="light"
+        />
+        <Image
           className={classes.userflow__image}
           src={userflowURL}
           title="User Flow"
           alt="Shows the primary user flow for a new user that want's to find a recipe."
-        ></img>
+          onClick={() => setUserFlowOpen(true)}
+        />
       </section>
       <section className={classes.wireframe}>
         <h2>Wireframes</h2>
@@ -324,42 +406,21 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
           user-friendly experience.
         </p>
         <div className={classes.wireframe__container}>
-          <img
-            className={classes.wireframe__image}
-            src={wireframe1URL}
-            title="Wireframe 1"
-            alt="Shows a hand drawn wireframe of a home screen."
-          ></img>
-          <img
-            className={classes.wireframe__image}
-            src={wireframe2URL}
-            title="Wireframe 2"
-            alt="Shows a hand drawn wireframe of a search screen."
-          ></img>
-          <img
-            className={classes.wireframe__image}
-            src={wireframe3URL}
-            title="Wireframe 3"
-            alt="Shows a hand drawn wireframe of a filter selection."
-          ></img>
-          <img
-            className={classes.wireframe__image}
-            src={wireframe8URL}
-            title="Wireframe 8"
-            alt="Shows a mid fidelity wireframe of a home screen."
-          ></img>
-          <img
-            className={classes.wireframe__image}
-            src={wireframe5URL}
-            title="Wireframe 5"
-            alt="Shows a mid fidelity wireframe of a search screen."
-          ></img>
-          <img
-            className={classes.wireframe__image}
-            src={wireframe6URL}
-            title="Wireframe 6"
-            alt="Shows a mid fidelity wireframe of a filter selection."
-          ></img>
+          <Lightbox
+            index={wireframeIndex}
+            slides={wireframeSlides}
+            open={wireframeIndex >= 0}
+            close={() => setWireframeIndex(-1)}
+          />
+          {wireframeSlides.map(({ src, alt }, index) => (
+            <Image
+              key={`wireframe-img-${index}`}
+              className={classes.wireframe__image}
+              src={src}
+              alt={alt}
+              onClick={() => setWireframeIndex(index)}
+            />
+          ))}
         </div>
       </section>
       <section>
@@ -515,78 +576,21 @@ export function TastyEffectCaseStudy(): React.JSX.Element {
         <h2>Final Design</h2>
         <p>Here are some screens of the final design.</p>
         <div className={classes.final__container}>
-          <img
-            className={classes.final__image}
-            src={final1URL}
-            title="Final Design 1"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final2URL}
-            title="Final Design 2"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final3URL}
-            title="Final Design 3"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final4URL}
-            title="Final Design 4"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final5URL}
-            title="Final Design 5"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final6URL}
-            title="Final Design 6"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final7URL}
-            title="Final Design 7"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final8URL}
-            title="Final Design 8"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final9URL}
-            title="Final Design 9"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final10URL}
-            title="Final Design 10"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final11URL}
-            title="Final Design 11"
-            alt="Shows a screen with the final design."
-          ></img>
-          <img
-            className={classes.final__image}
-            src={final12URL}
-            title="Final Design 12"
-            alt="Shows a screen with the final design."
-          ></img>
+          <Lightbox
+            index={finalIndex}
+            slides={finalSlides}
+            open={finalIndex >= 0}
+            close={() => setFinalIndex(-1)}
+          />
+          {finalSlides.map(({ src, alt }, index) => (
+            <Image
+              key={`final-img-${index}`}
+              className={classes.final__image}
+              src={src}
+              alt={alt}
+              onClick={() => setFinalIndex(index)}
+            />
+          ))}
         </div>
       </section>
       <section>

@@ -1,0 +1,9 @@
+.light {
+  --yarl__color_backdrop: var(--background);
+
+  --yarl__button_filter: none;
+
+  --yarl__color_button: var(--yarl-light-button-color);
+  --yarl__color_button_active: var(--yarl-light-button-active-color);
+  --yarl__color_button_disabled: var(--yarl-light-button-disabled-color);
+}

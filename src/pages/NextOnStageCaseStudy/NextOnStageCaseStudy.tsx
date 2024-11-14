@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import sitemapURL from '../../img/images/nos_sitemap.png';
 import userflowURL from '../../img/images/nos_userflow.png';
@@ -23,10 +23,62 @@ import nextOnStageURL from '../../img/images/nextonstage.png';
 import noiseMapURL from '../../img/images/nos_noise_map.png';
 import backgroundURL from '../../img/images/nos_background.png';
 import { CaseStudyPage } from '../../components/CaseStudyPage';
+import { Lightbox } from '../../components/Lightbox';
+import { Image } from '../../components/Image';
 
 import classes from './style.module.scss';
 
+const wireframeSlides = [
+  {
+    src: wireframe1URL,
+    alt: 'Shows a hand drawn wireframe of a home screen.',
+  },
+  {
+    src: wireframe2URL,
+    alt: 'Shows a hand drawn wireframe of a event page.',
+  },
+  {
+    src: wireframe3URL,
+    alt: 'Shows a hand drawn wireframe of a form.',
+  },
+  {
+    src: wireframe4URL,
+    alt: 'Shows a mid fidelity wireframe of a home screen.',
+  },
+  {
+    src: wireframe5URL,
+    alt: 'Shows a mid fidelity wireframe of a event page.',
+  },
+  {
+    src: wireframe6URL,
+    alt: 'Shows a mid fidelity wireframe of a form.',
+  },
+];
+
+const finalSlides = [
+  {
+    src: final1URL,
+    alt: 'Shows the home screen with a hero, filter, and list section',
+  },
+  { src: final2URL, alt: 'Shows the event page.' },
+  { src: final3URL, alt: 'Shows the create event form' },
+  { src: final4URL, alt: 'Shows the report form' },
+  { src: final5URL, alt: 'Shows the venues page with a list of venues.' },
+  {
+    src: final6URL,
+    alt: 'Shows the organizers page with a list of organizers.',
+  },
+  { src: final7URL, alt: 'Shows the venue page' },
+  { src: final8URL, alt: 'Shows the organizer page' },
+  { src: final9URL, alt: 'Shows the search modal' },
+];
+
 export function NextOnStageCaseStudy(): React.JSX.Element {
+  const [wireframeIndex, setWireframeIndex] = useState(-1);
+  const [finalIndex, setFinalIndex] = useState(-1);
+  const [userFlowOpen, setUserFlowOpen] = useState(false);
+  const [siteMapOpen, setSiteMapOpen] = useState(false);
+
   return (
     <CaseStudyPage>
       <section className={classes.hero}>
@@ -298,12 +350,24 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
           the website and ensures that all essential components are accounted
           for.
         </p>
-        <img
+        <Lightbox
+          slides={[
+            {
+              src: sitemapURL,
+              alt: 'Shows a sitemap of the next on stage website',
+            },
+          ]}
+          open={siteMapOpen}
+          close={() => setSiteMapOpen(false)}
+          theme="light"
+        />
+        <Image
           className={classes.sitemap__image}
           src={sitemapURL}
           title="Sitemap"
           alt="Shows a sitemap of the next on stage website"
-        ></img>
+          onClick={() => setSiteMapOpen(true)}
+        />
       </section>
       <section className={classes.userflow}>
         <h2>User Flow</h2>
@@ -318,12 +382,24 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
           users to flag events, organizers, or venues if issues arise, fostering
           a respectful and trustworthy community.
         </p>
-        <img
+        <Lightbox
+          slides={[
+            {
+              src: userflowURL,
+              alt: 'Shows the primary user flow for navigating the website.',
+            },
+          ]}
+          open={userFlowOpen}
+          close={() => setUserFlowOpen(false)}
+          theme="light"
+        />
+        <Image
           className={classes.userflow__image}
           src={userflowURL}
           title="User Flow"
           alt="Shows the primary user flow for navigating the website."
-        ></img>
+          onClick={() => setUserFlowOpen(true)}
+        />
       </section>
       <section className={classes.wireframe}>
         <h2>Wireframes</h2>
@@ -339,42 +415,21 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
           high-fidelity prototypes.
         </p>
         <div className={classes.wireframe__container}>
-          <img
-            className={classes.wireframe__image}
-            src={wireframe1URL}
-            title="Wireframe 1"
-            alt="Shows a hand drawn wireframe of a home screen."
-          ></img>
-          <img
-            className={classes.wireframe__image}
-            src={wireframe2URL}
-            title="Wireframe 2"
-            alt="Shows a hand drawn wireframe of a event page."
-          ></img>
-          <img
-            className={classes.wireframe__image}
-            src={wireframe3URL}
-            title="Wireframe 3"
-            alt="Shows a hand drawn wireframe of a form."
-          ></img>
-          <img
-            className={classes.wireframe__image}
-            src={wireframe4URL}
-            title="Wireframe 4"
-            alt="Shows a mid fidelity wireframe of a home screen."
-          ></img>
-          <img
-            className={classes.wireframe__image}
-            src={wireframe5URL}
-            title="Wireframe 5"
-            alt="Shows a mid fidelity wireframe of a event page."
-          ></img>
-          <img
-            className={classes.wireframe__image}
-            src={wireframe6URL}
-            title="Wireframe 6"
-            alt="Shows a mid fidelity wireframe of a form."
-          ></img>
+          <Lightbox
+            index={wireframeIndex}
+            slides={wireframeSlides}
+            open={wireframeIndex >= 0}
+            close={() => setWireframeIndex(-1)}
+          />
+          {wireframeSlides.map(({ src, alt }, index) => (
+            <Image
+              key={`wireframe-img-${index}`}
+              className={classes.wireframe__image}
+              src={src}
+              alt={alt}
+              onClick={() => setWireframeIndex(index)}
+            />
+          ))}
         </div>
       </section>
       <section className={classes.design}>
@@ -605,63 +660,33 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
           safe and trustworthy platform.
         </p>
         <div className={classes.final__container}>
+          <Lightbox
+            index={finalIndex}
+            slides={finalSlides}
+            open={finalIndex >= 0}
+            close={() => setFinalIndex(-1)}
+          />
           <div className={classes.final__column}>
-            <img
-              className={classes.final__image}
-              src={final1URL}
-              title="Final Design 1"
-              alt="Shows a screen with the final design."
-            ></img>
-            <img
-              className={classes.final__image}
-              src={final2URL}
-              title="Final Design 2"
-              alt="Shows a screen with the final design."
-            ></img>
-            <img
-              className={classes.final__image}
-              src={final3URL}
-              title="Final Design 3"
-              alt="Shows a screen with the final design."
-            ></img>
-            <img
-              className={classes.final__image}
-              src={final4URL}
-              title="Final Design 4"
-              alt="Shows a screen with the final design."
-            ></img>
+            {finalSlides.slice(0, 4).map(({ src, alt }, index) => (
+              <Image
+                key={`final-img-first-${index}`}
+                className={classes.final__image}
+                src={src}
+                alt={alt}
+                onClick={() => setFinalIndex(index)}
+              />
+            ))}
           </div>
           <div className={classes.final__column}>
-            <img
-              className={classes.final__image}
-              src={final5URL}
-              title="Final Design 5"
-              alt="Shows a screen with the final design."
-            ></img>
-            <img
-              className={classes.final__image}
-              src={final6URL}
-              title="Final Design 6"
-              alt="Shows a screen with the final design."
-            ></img>
-            <img
-              className={classes.final__image}
-              src={final7URL}
-              title="Final Design 7"
-              alt="Shows a screen with the final design."
-            ></img>
-            <img
-              className={classes.final__image}
-              src={final8URL}
-              title="Final Design 8"
-              alt="Shows a screen with the final design."
-            ></img>
-            <img
-              className={classes.final__image}
-              src={final9URL}
-              title="Final Design 9"
-              alt="Shows a screen with the final design."
-            ></img>
+            {finalSlides.slice(4).map(({ src, alt }, index) => (
+              <Image
+                key={`final-img-second-${index}`}
+                className={classes.final__image}
+                src={src}
+                alt={alt}
+                onClick={() => setFinalIndex(index)}
+              />
+            ))}
           </div>
         </div>
       </section>
