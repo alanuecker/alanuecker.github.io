@@ -13,6 +13,7 @@ import { NextOnStageCaseStudy } from './pages/NextOnStageCaseStudy';
 
 import './main.scss';
 import 'modern-normalize/modern-normalize.css';
+import 'yet-another-react-lightbox/styles.css';
 
 const router = createHashRouter([
   {
