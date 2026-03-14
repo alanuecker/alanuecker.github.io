@@ -42,9 +42,7 @@ export function Footer({ className }: Props): React.JSX.Element {
               <Mail />
               uecker.alan@gmail.com
             </Link>
-            <span className={classNames(classes.title, classes.title__follow)}>
-              Follow me
-            </span>
+            <span className={classNames(classes.title, classes.title__follow)}>Follow me</span>
             <Link
               className={classes.link}
               to="https://github.com/alanuecker"

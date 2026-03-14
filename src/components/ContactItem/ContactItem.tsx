@@ -11,19 +11,6 @@ interface Props {
   icon: React.ReactElement;
 }
 
-export function ContactItem({
-  to,
-  title,
-  external = true,
-  icon,
-}: Props): React.JSX.Element {
-  return (
-    <Button
-      className={classes.root}
-      to={to}
-      external={external}
-      icon={icon}
-      title={title}
-    />
-  );
+export function ContactItem({ to, title, external = true, icon }: Props): React.JSX.Element {
+  return <Button className={classes.root} to={to} external={external} icon={icon} title={title} />;
 }

@@ -1,12 +1,12 @@
-@use "../../styles/typo.scss";
-@use "../../styles/mixins.scss";
+@use '../../styles/typo.scss';
+@use '../../styles/mixins.scss';
 
 .root {
   display: flex;
   flex-direction: column;
 
   position: relative;
-  
+
   width: 100%;
   max-width: 700px;
 

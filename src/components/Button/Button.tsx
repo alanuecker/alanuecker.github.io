@@ -13,13 +13,7 @@ interface Props {
   className?: string;
 }
 
-export function Button({
-  to,
-  title,
-  external = true,
-  icon,
-  className,
-}: Props): React.JSX.Element {
+export function Button({ to, title, external = true, icon, className }: Props): React.JSX.Element {
   return (
     <Link
       className={classNames(classes.root, className)}

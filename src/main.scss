@@ -1,94 +1,93 @@
-@use "./styles/mixins.scss";
+@use './styles/mixins.scss';
 
 @font-face {
-  font-family: "Cabin";
+  font-family: 'Cabin';
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: 'wdth' 100;
   font-display: swap;
-  src: url("./fonts/Cabin-Regular-subset.woff2") format("woff2");
+  src: url('./fonts/Cabin-Regular-subset.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Cabin";
+  font-family: 'Cabin';
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: 'wdth' 100;
   font-display: swap;
-  src: url("./fonts/Cabin-Medium-subset.woff2") format("woff2");
+  src: url('./fonts/Cabin-Medium-subset.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Cabin";
+  font-family: 'Cabin';
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: 'wdth' 100;
   font-display: swap;
-  src: url("./fonts/Cabin-Bold-subset.woff2") format("woff2");
+  src: url('./fonts/Cabin-Bold-subset.woff2') format('woff2');
 }
 
-
 @font-face {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: 'wdth' 100;
   font-display: swap;
-  src: url("./fonts/Inter-Regular-subset.woff2") format("woff2");
+  src: url('./fonts/Inter-Regular-subset.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: 'wdth' 100;
   font-display: swap;
-  src: url("./fonts/Inter-SemiBold-subset.woff2") format("woff2");
+  src: url('./fonts/Inter-SemiBold-subset.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: 'wdth' 100;
   font-display: swap;
-  src: url("./fonts/Inter-Bold-subset.woff2") format("woff2");
+  src: url('./fonts/Inter-Bold-subset.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: 'wdth' 100;
   font-display: swap;
-  src: url("./fonts/Manrope-Regular-subset.woff2") format("woff2");
+  src: url('./fonts/Manrope-Regular-subset.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: 'wdth' 100;
   font-display: swap;
-  src: url("./fonts/Manrope-Bold-subset.woff2") format("woff2");
+  src: url('./fonts/Manrope-Bold-subset.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Newake";
+  font-family: 'Newake';
   font-optical-sizing: auto;
-  font-weight: "Demo";
+  font-weight: 'Demo';
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: 'wdth' 100;
   font-display: swap;
-  src: url("./fonts/Newake-Font-Demo-subset.woff2") format("woff2");
+  src: url('./fonts/Newake-Font-Demo-subset.woff2') format('woff2');
 }
 
 body {
@@ -115,7 +114,7 @@ body {
 
   background-color: var(--background);
 
-  font-family: "Cabin", sans-serif;
+  font-family: 'Cabin', sans-serif;
 }
 
 * {

@@ -16,32 +16,20 @@ export function AboutSection(): React.JSX.Element {
           Hi, I‘m Alan a Software Engineer based in Leipzig, Germany.
         </h1>
         <span className={classes.body}>
-          My experience in developing websites and an education in UI/UX design
-          make me the perfect fit for any cross-functional team.
+          My experience in developing websites and an education in UI/UX design make me the perfect
+          fit for any cross-functional team.
         </span>
       </div>
       <div className={classes.contacts}>
-        <ContactItem
-          to="https://github.com/alanuecker"
-          title="GitHub"
-          icon={<GitHub />}
-        />
+        <ContactItem to="https://github.com/alanuecker" title="GitHub" icon={<GitHub />} />
         <ContactItem
           to="mailto:uecker.alan@gmail.com"
           title="Mail"
           external={false}
           icon={<Mail />}
         />
-        <ContactItem
-          to="https://linkedin.com/in/alanuecker"
-          title="LinkedIn"
-          icon={<LinkedIn />}
-        />
-        <ContactItem
-          to="https://twitter.com/alan_uecker"
-          title="Twitter"
-          icon={<Twitter />}
-        />
+        <ContactItem to="https://linkedin.com/in/alanuecker" title="LinkedIn" icon={<LinkedIn />} />
+        <ContactItem to="https://twitter.com/alan_uecker" title="Twitter" icon={<Twitter />} />
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
-@use "../../styles/typo.scss";
-@use "../../styles/mixins.scss";
+@use '../../styles/typo.scss';
+@use '../../styles/mixins.scss';
 
 .root {
   display: flex;
@@ -79,7 +79,8 @@
     margin: 0;
     padding: 0;
 
-    &:has(+ p), &:has(+ ul) {
+    &:has(+ p),
+    &:has(+ ul) {
       margin-bottom: 0.5rem;
     }
   }
@@ -90,7 +91,8 @@
     margin: 0;
     padding: 0;
 
-    &:has(+ p), &:has(+ ul) {
+    &:has(+ p),
+    &:has(+ ul) {
       margin-bottom: 0.5rem;
     }
   }

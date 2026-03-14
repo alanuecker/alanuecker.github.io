@@ -18,21 +18,13 @@ export function WorkSection(): React.JSX.Element {
           </span>
         </div>
         <div className={classes.item__container}>
-          <h3 className={classes.item__title}>
-            UX/UI Product Design Bootcamp - WBS Coding School
-          </h3>
+          <h3 className={classes.item__title}>UX/UI Product Design Bootcamp - WBS Coding School</h3>
           <p>
-            Learning the basics of UX Research and UI Design in a project based
-            and team oriented environment.
+            Learning the basics of UX Research and UI Design in a project based and team oriented
+            environment.
           </p>
           <SoftwareItems
-            items={[
-              'UX Principles',
-              'UX Research',
-              'UI Design',
-              'Design Thinking',
-              'Figma',
-            ]}
+            items={['UX Principles', 'UX Research', 'UI Design', 'Design Thinking', 'Figma']}
           />
         </div>
       </div>
@@ -44,19 +36,16 @@ export function WorkSection(): React.JSX.Element {
           </span>
         </div>
         <div className={classes.item__container}>
-          <h3 className={classes.item__title}>
-            Software Engineer - IMG.LY GmbH
-          </h3>
+          <h3 className={classes.item__title}>Software Engineer - IMG.LY GmbH</h3>
           <p>
-            I started out at IMG.LY by partnering with a Senior Developer to
-            create a web-based image editor using React and TypeScript. This
-            role also involved providing customer support for developers and
-            maintaining a npm library and it's integration examples.
+            I started out at IMG.LY by partnering with a Senior Developer to create a web-based
+            image editor using React and TypeScript. This role also involved providing customer
+            support for developers and maintaining a npm library and it's integration examples.
           </p>
           <p>
-            Afterward, I led the development of a documentation platform
-            utilizing React, Typescript, and Gatsby, that was specifically
-            designed to meet the needs of internal developers.
+            Afterward, I led the development of a documentation platform utilizing React,
+            Typescript, and Gatsby, that was specifically designed to meet the needs of internal
+            developers.
           </p>
           <SoftwareItems
             items={[
@@ -85,17 +74,13 @@ export function WorkSection(): React.JSX.Element {
           </span>
         </div>
         <div className={classes.item__container}>
-          <h3 className={classes.item__title}>
-            Software Engineer - rise technologies GmbH
-          </h3>
+          <h3 className={classes.item__title}>Software Engineer - rise technologies GmbH</h3>
           <p>
-            I worked in a team of 4 developers to create a communication-focused
-            SaaS platform in React and JavaScript. I also collaborated with a UI
-            designer to create a component library.
+            I worked in a team of 4 developers to create a communication-focused SaaS platform in
+            React and JavaScript. I also collaborated with a UI designer to create a component
+            library.
           </p>
-          <SoftwareItems
-            items={['JavaScript', 'React', 'Cordova', 'MongoDB']}
-          />
+          <SoftwareItems items={['JavaScript', 'React', 'Cordova', 'MongoDB']} />
         </div>
       </div>
     </Section>

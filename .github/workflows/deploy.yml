@@ -2,7 +2,7 @@ name: Deploy to GH pages with Vite
 
 on:
   push:
-    branches: ["website"]
+    branches: ['website']
   workflow_dispatch:
 
 permissions:
@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 jobs:
@@ -40,7 +40,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: "dist"
+          path: 'dist'
 
       - name: Deploy to GitHub Pages
         id: deployment

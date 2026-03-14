@@ -11,12 +11,7 @@ import classes from './style.module.scss';
 
 export function SkillsSection(): React.JSX.Element {
   return (
-    <Section
-      className={classes.root}
-      id="skills"
-      title="Skills"
-      showBorder={false}
-    >
+    <Section className={classes.root} id="skills" title="Skills" showBorder={false}>
       <DiamondIcon className={classes.diamond} />
       <div className={classes.container}>
         <div className={classes.item}>
@@ -27,8 +22,7 @@ export function SkillsSection(): React.JSX.Element {
           ></img>
           <span className={classes.item__title}>Web Development</span>
           <span className={classes.item__body}>
-            I'm an expert in HTML5, CSS3, JavaScript (ES6+), TypeScript, React,
-            and Node.js
+            I'm an expert in HTML5, CSS3, JavaScript (ES6+), TypeScript, React, and Node.js
           </span>
         </div>
         <div className={classes.item}>
@@ -50,8 +44,7 @@ export function SkillsSection(): React.JSX.Element {
           ></img>
           <span className={classes.item__title}>Tools</span>
           <span className={classes.item__body}>
-            I use tools like Git, GitHub Actions, Jest, Playwright, ESLint,
-            Prettier, and Vite daily
+            I use tools like Git, GitHub Actions, Jest, Playwright, ESLint, Prettier, and Vite daily
           </span>
         </div>
         <div className={classes.item}>
