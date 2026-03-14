@@ -93,19 +93,16 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
         <h1>NEXT ON STAGE</h1>
         <div className={classes.hero__description}>
           <p>
-            This is the final project for a UX/UI bootcamp, where we were tasked
-            with researching a topic and designing an application or website.
-            Inspired by my experience moving to a new city, I decided to address
-            the challenge of finding reliable information about smaller, local
-            concerts. With event details often scattered across Instagram,
-            Telegram, and physical posters, especially newcomers struggle to
-            stay informed.
+            This is the final project for a UX/UI bootcamp, where we were tasked with researching a
+            topic and designing an application or website. Inspired by my experience moving to a new
+            city, I decided to address the challenge of finding reliable information about smaller,
+            local concerts. With event details often scattered across Instagram, Telegram, and
+            physical posters, especially newcomers struggle to stay informed.
           </p>
           <p>
-            To solve this, I developed “Next on Stage,” a website framework
-            designed to bring event information into one accessible space and
-            empower local communities to easily promote their shows. This case
-            study will walk through the research, design decisions, and user
+            To solve this, I developed “Next on Stage,” a website framework designed to bring event
+            information into one accessible space and empower local communities to easily promote
+            their shows. This case study will walk through the research, design decisions, and user
             experience optimizations that shaped this solution.
           </p>
         </div>
@@ -136,36 +133,32 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
         <div>
           <h3>Problem</h3>
           <p>
-            Newcomers to a city often struggle to find reliable information on
-            small concerts and the local event scene. Details about events are
-            scattered across multiple platforms like Instagram, Telegram
-            channels, and physical flyers, making it difficult to stay up to
-            date. For those looking to go out on a specific date, finding
-            relevant event information requires significant time and effort,
-            often resulting in missed opportunities and frustration.
+            Newcomers to a city often struggle to find reliable information on small concerts and
+            the local event scene. Details about events are scattered across multiple platforms like
+            Instagram, Telegram channels, and physical flyers, making it difficult to stay up to
+            date. For those looking to go out on a specific date, finding relevant event information
+            requires significant time and effort, often resulting in missed opportunities and
+            frustration.
           </p>
         </div>
         <div>
           <h3>Solution</h3>
           <p>
-            The solution is a website framework designed to empower local
-            communities by providing a dedicated platform for event promotion.
-            This website will allow organizers to easily list their events while
-            offering attendees a central hub for up-to-date information. In
-            addition to event details, the platform will include essential
-            information about venues, accessibility features, and awareness
-            policies, ensuring that users have everything they need to plan
-            their outing with confidence.
+            The solution is a website framework designed to empower local communities by providing a
+            dedicated platform for event promotion. This website will allow organizers to easily
+            list their events while offering attendees a central hub for up-to-date information. In
+            addition to event details, the platform will include essential information about venues,
+            accessibility features, and awareness policies, ensuring that users have everything they
+            need to plan their outing with confidence.
           </p>
         </div>
       </section>
       <section className={classes.process}>
         <h2>Design Process</h2>
         <p>
-          I choose the design thinking process for this project due to it’s
-          focus on human needs, completing the <b>Empathize</b>, <b>Define</b>,{' '}
-          <b>Ideate</b>, <b>Prototype</b>, and <b>Test</b> stages over the
-          course of three weeks.
+          I choose the design thinking process for this project due to it’s focus on human needs,
+          completing the <b>Empathize</b>, <b>Define</b>, <b>Ideate</b>, <b>Prototype</b>, and{' '}
+          <b>Test</b> stages over the course of three weeks.
         </p>
         <div className={classes.process__weeks}>
           <div>
@@ -198,50 +191,44 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
       <section>
         <h2>Research & Insights</h2>
         <p>
-          The first step was to develop a set of interview questions aimed at
-          gathering insights from individuals who organize smaller, local
-          events. I wanted to understand their methods for promoting events and
-          identify factors that influence attendee turnout.
+          The first step was to develop a set of interview questions aimed at gathering insights
+          from individuals who organize smaller, local events. I wanted to understand their methods
+          for promoting events and identify factors that influence attendee turnout.
         </p>
         <p>
-          For the quantitative research, I conducted a survey with concert
-          attendees to learn about their experiences with local show promotion
-          and the types of information they prioritize when deciding whether to
-          attend an event. This combination of qualitative and quantitative data
-          helped build a well-rounded understanding of current challenges and
-          user needs.
+          For the quantitative research, I conducted a survey with concert attendees to learn about
+          their experiences with local show promotion and the types of information they prioritize
+          when deciding whether to attend an event. This combination of qualitative and quantitative
+          data helped build a well-rounded understanding of current challenges and user needs.
         </p>
         <h3>Key Insights</h3>
         <ul>
           <li>
-            Information Overload: 47% of survey participants felt overwhelmed by
-            the number of sources for concert information, making it challenging
-            to keep track of events.
+            Information Overload: 47% of survey participants felt overwhelmed by the number of
+            sources for concert information, making it challenging to keep track of events.
           </li>
           <li>
-            Missed Opportunities: 27% of respondents reported missing out on
-            shows due to insufficient or delayed promotion, with many seeing
-            event posts only after the event had passed.
+            Missed Opportunities: 27% of respondents reported missing out on shows due to
+            insufficient or delayed promotion, with many seeing event posts only after the event had
+            passed.
           </li>
           <li>
-            Venue Information Gaps: Many attendees expressed a need for more
-            comprehensive venue information, including details on atmosphere and
-            accessibility, to help them decide whether a venue aligns with their
-            preferences.
+            Venue Information Gaps: Many attendees expressed a need for more comprehensive venue
+            information, including details on atmosphere and accessibility, to help them decide
+            whether a venue aligns with their preferences.
           </li>
         </ul>
         <p>
-          These insights underscored the need for a centralized platform that
-          could simplify event discovery while offering crucial details about
-          venues and accessibility.
+          These insights underscored the need for a centralized platform that could simplify event
+          discovery while offering crucial details about venues and accessibility.
         </p>
       </section>
       <section className={classes.persona}>
         <h2 className={classes.persona__title}>User Persona</h2>
         <p className={classes.persona__description}>
-          After gathering and organizing the data from my research, I created a
-          user persona to help visualize the target end-user and better
-          understand their needs, preferences, and pain points.
+          After gathering and organizing the data from my research, I created a user persona to help
+          visualize the target end-user and better understand their needs, preferences, and pain
+          points.
         </p>
         <div className={classes.persona__container}>
           <img
@@ -303,40 +290,29 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
           <div className={classes.persona__bio}>
             <h3>Bio</h3>
             <p>
-              Alex is a 28-year-old bookstore clerk who recently moved to
-              Leipzig and is passionate about exploring the local music scene.
-              They enjoy attending smaller, niche concerts but find it
-              challenging to discover such events in a new city. Outside of
-              work, Alex loves spending time in local cafes, art galleries,
-              seeking to immerse themselves in the city's vibrant cultural
-              scene. They are eager to meet new people, make friends with
-              similar interests, and feel more connected to their new community.
+              Alex is a 28-year-old bookstore clerk who recently moved to Leipzig and is passionate
+              about exploring the local music scene. They enjoy attending smaller, niche concerts
+              but find it challenging to discover such events in a new city. Outside of work, Alex
+              loves spending time in local cafes, art galleries, seeking to immerse themselves in
+              the city's vibrant cultural scene. They are eager to meet new people, make friends
+              with similar interests, and feel more connected to their new community.
             </p>
           </div>
           <div className={classes.persona__goals}>
             <h3>Goals</h3>
             <ul>
-              <li>
-                Find reliable source for information about small concerts and
-                events
-              </li>
+              <li>Find reliable source for information about small concerts and events</li>
               <li>Support local artists and venues</li>
-              <li>
-                Meet like-minded people and build social circle in new city
-              </li>
+              <li>Meet like-minded people and build social circle in new city</li>
             </ul>
           </div>
           <div className={classes.persona__pain}>
             <h3>Pain Points</h3>
             <ul>
               <li>
-                Feels overwhelmed by the amount of local event websites and
-                social media channels
+                Feels overwhelmed by the amount of local event websites and social media channels
               </li>
-              <li>
-                Difficult to find information on smaller, underground concerts
-                and events
-              </li>
+              <li>Difficult to find information on smaller, underground concerts and events</li>
             </ul>
           </div>
         </div>
@@ -344,11 +320,9 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
       <section className={classes.sitemap}>
         <h2>Sitemap</h2>
         <p>
-          With the initial UX research and ideation complete, I created a
-          sitemap to outline the key pages and functionalities of the
-          application. This visual representation helps clarify the structure of
-          the website and ensures that all essential components are accounted
-          for.
+          With the initial UX research and ideation complete, I created a sitemap to outline the key
+          pages and functionalities of the application. This visual representation helps clarify the
+          structure of the website and ensures that all essential components are accounted for.
         </p>
         <Lightbox
           slides={[
@@ -372,15 +346,13 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
       <section className={classes.userflow}>
         <h2>User Flow</h2>
         <p>
-          The User Flow outlines the key functionalities of the website, guiding
-          users through a seamless event discovery experience. Starting on the
-          homepage, users can use the search and filter options to find events
-          that match their interests or a specific date. Each event page
-          provides essential details and connects directly to the organizer and
-          venue pages, giving users a fuller picture of the event's atmosphere,
-          accessibility, and policies. Additionally, a report feature enables
-          users to flag events, organizers, or venues if issues arise, fostering
-          a respectful and trustworthy community.
+          The User Flow outlines the key functionalities of the website, guiding users through a
+          seamless event discovery experience. Starting on the homepage, users can use the search
+          and filter options to find events that match their interests or a specific date. Each
+          event page provides essential details and connects directly to the organizer and venue
+          pages, giving users a fuller picture of the event's atmosphere, accessibility, and
+          policies. Additionally, a report feature enables users to flag events, organizers, or
+          venues if issues arise, fostering a respectful and trustworthy community.
         </p>
         <Lightbox
           slides={[
@@ -404,15 +376,13 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
       <section className={classes.wireframe}>
         <h2>Wireframes</h2>
         <p>
-          The initial low-fidelity wireframes were sketched on paper, allowing
-          for quick exploration of layout ideas and page structures. After
-          conducting brief user tests with these sketches to gather initial
-          feedback, I moved the designs into Figma to refine and iterate
-          digitally. Mid-fidelity wireframes were then developed to focus on
-          testing the information architecture, ensuring that users could easily
-          navigate between events, venues, and organizer details. This step
-          helped validate the structure before adding visual details in the
-          high-fidelity prototypes.
+          The initial low-fidelity wireframes were sketched on paper, allowing for quick exploration
+          of layout ideas and page structures. After conducting brief user tests with these sketches
+          to gather initial feedback, I moved the designs into Figma to refine and iterate
+          digitally. Mid-fidelity wireframes were then developed to focus on testing the information
+          architecture, ensuring that users could easily navigate between events, venues, and
+          organizer details. This step helped validate the structure before adding visual details in
+          the high-fidelity prototypes.
         </p>
         <div className={classes.wireframe__container}>
           <Lightbox
@@ -435,21 +405,19 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
       <section className={classes.design}>
         <h2>Design System</h2>
         <p>
-          The design captures the rebellious and bold spirit of the underground
-          music scene by leveraging dynamic elements like bold typography,
-          layered graphics, and striking gradients. The color palette is
-          intentionally limited to a foreground, background, and elevation color
-          to create contrast and maintain focus. Gradients and abstract
-          background textures bring a sense of energy and noise, reflecting the
-          raw and vibrant feel of smaller local concerts.
+          The design captures the rebellious and bold spirit of the underground music scene by
+          leveraging dynamic elements like bold typography, layered graphics, and striking
+          gradients. The color palette is intentionally limited to a foreground, background, and
+          elevation color to create contrast and maintain focus. Gradients and abstract background
+          textures bring a sense of energy and noise, reflecting the raw and vibrant feel of smaller
+          local concerts.
         </p>
         <div className={classes.design__container}>
           <div className={classes.design__item}>
             <h3>Mood Board</h3>
             <p>
-              The mood board draws inspiration from images and flyers of smaller
-              underground shows, aiming to capture their raw, rebellious energy
-              and translate it into the final design.
+              The mood board draws inspiration from images and flyers of smaller underground shows,
+              aiming to capture their raw, rebellious energy and translate it into the final design.
             </p>
             <img
               className={classes.design__mood_board_image}
@@ -468,17 +436,11 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
                 <span>Black</span>
                 <span>#0F1112</span>
               </div>
-              <div
-                className={classes.design__color_item}
-                style={{ background: '#F2F2F2' }}
-              >
+              <div className={classes.design__color_item} style={{ background: '#F2F2F2' }}>
                 <span>Background</span>
                 <span>#F2F2F2</span>
               </div>
-              <div
-                className={classes.design__color_item}
-                style={{ background: '#FFFFFF' }}
-              >
+              <div className={classes.design__color_item} style={{ background: '#FFFFFF' }}>
                 <span>Elevation</span>
                 <span>#FFFFFF</span>
               </div>
@@ -642,22 +604,19 @@ export function NextOnStageCaseStudy(): React.JSX.Element {
       <section className={classes.final}>
         <h2>Final Design</h2>
         <p>
-          The final design focuses on providing users with comprehensive
-          features for discovering and attending local events. The homepage
-          highlights popular upcoming events, followed by a complete list that
-          users can narrow down using search and filter options. Each event page
-          prominently displays key details and showcases event artwork, with
-          additional information available further down the page. Venue pages
-          offer images to convey the atmosphere, along with FAQs addressing
-          common attendee questions.
+          The final design focuses on providing users with comprehensive features for discovering
+          and attending local events. The homepage highlights popular upcoming events, followed by a
+          complete list that users can narrow down using search and filter options. Each event page
+          prominently displays key details and showcases event artwork, with additional information
+          available further down the page. Venue pages offer images to convey the atmosphere, along
+          with FAQs addressing common attendee questions.
         </p>
         <p>
-          To support the local community, space is dedicated to organizers and
-          collectives, helping users make informed decisions about events. A
-          submission feature allows anyone to add events, with moderation in
-          place to maintain quality. Additionally, a report function enables
-          users to flag issues with events, organizers, or venues, fostering a
-          safe and trustworthy platform.
+          To support the local community, space is dedicated to organizers and collectives, helping
+          users make informed decisions about events. A submission feature allows anyone to add
+          events, with moderation in place to maintain quality. Additionally, a report function
+          enables users to flag issues with events, organizers, or venues, fostering a safe and
+          trustworthy platform.
         </p>
         <div className={classes.final__container}>
           <Lightbox

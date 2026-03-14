@@ -8,9 +8,6 @@ interface Props {
   children: React.ReactNode;
 }
 
-export function CaseStudyPage({
-  className,
-  children,
-}: Props): React.JSX.Element {
+export function CaseStudyPage({ className, children }: Props): React.JSX.Element {
   return <div className={classNames(classes.root, className)}>{children}</div>;
 }

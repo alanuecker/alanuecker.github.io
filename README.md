@@ -16,7 +16,7 @@ To get a local copy up and running, follow these steps:
 2. Install the dependencies:
 
    ```bash
-   yarn
+   pnpm
    ```
 
 ## Usage
@@ -24,7 +24,7 @@ To get a local copy up and running, follow these steps:
 To run the project locally, use the following command:
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 Open your browser and visit `http://localhost:3000` to view the portfolio.
@@ -43,11 +43,9 @@ Open your browser and visit `http://localhost:3000` to view the portfolio.
 
 ### Scripts
 
-- `yarn dev`: Start the development server.
-- `yarn build`: Build the project for production.
-- `yarn preview`: Serve the production build locally.
-- `yarn lint:ts`: Run ESLint for the project.
-- `yarn lint:css`: Run Stylelint for the project.
+- `pnpm dev`: Start the development server.
+- `pnpm build`: Build the project for production.
+- `pnpm preview`: Serve the production build locally.
 
 ## Deployment
 
@@ -56,7 +54,7 @@ To deploy the project, follow these steps:
 1. Build the project for production:
 
    ```bash
-   yarn build
+   pnpm build
    ```
 
 2. Deploy the contents of the `dist` directory to your preferred hosting provider.

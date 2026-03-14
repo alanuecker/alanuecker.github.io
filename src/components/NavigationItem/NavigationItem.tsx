@@ -10,11 +10,7 @@ interface Props {
   children: string;
 }
 
-export function NavigationItem({
-  to,
-  onClick,
-  children,
-}: Props): React.JSX.Element {
+export function NavigationItem({ to, onClick, children }: Props): React.JSX.Element {
   return (
     <li className={classes.root}>
       <Link className={classes.link} to={to} onClick={onClick}>

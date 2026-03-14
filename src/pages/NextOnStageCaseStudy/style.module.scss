@@ -1,5 +1,5 @@
-@use "../../styles/typo.scss";
-@use "../../styles/mixins.scss";
+@use '../../styles/typo.scss';
+@use '../../styles/mixins.scss';
 
 .hero {
   display: grid;
@@ -7,16 +7,16 @@
   column-gap: 2rem;
 
   grid-template:
-    "image image"
-    "title info"
-    "description info";
+    'image image'
+    'title info'
+    'description info';
 
   @include mixins.md {
     grid-template:
-      "image"
-      "title"
-      "description"
-      "info";
+      'image'
+      'title'
+      'description'
+      'info';
   }
 
   &__container {
@@ -114,22 +114,22 @@
     border-bottom-left-radius: 2rem;
 
     grid-template:
-      "image bio bio bio bio"
-      "info goals goals pain pain";
+      'image bio bio bio bio'
+      'info goals goals pain pain';
 
     @include mixins.md {
       grid-template:
-        "info image" 
-        "bio bio"
-        "goals pain";
+        'info image'
+        'bio bio'
+        'goals pain';
     }
     @include mixins.sm {
       grid-template:
-        "image"
-        "info"
-        "bio"
-        "goals"
-        "pain";
+        'image'
+        'info'
+        'bio'
+        'goals'
+        'pain';
     }
   }
 
@@ -209,9 +209,9 @@
   &__container {
     display: grid;
     grid-template:
-      "one four"
-      "two five"
-      "three six";
+      'one four'
+      'two five'
+      'three six';
     gap: 1rem;
     align-self: center;
 
@@ -230,21 +230,21 @@
 
     @include mixins.md {
       grid-template:
-        "one four"
-        "two five"
-        "three six";
+        'one four'
+        'two five'
+        'three six';
 
       padding: 1rem;
     }
 
     @include mixins.sm {
       grid-template:
-        "one"
-        "two"
-        "three"
-        "four"
-        "five"
-        "six";
+        'one'
+        'two'
+        'three'
+        'four'
+        'five'
+        'six';
     }
 
     img:nth-child(1) {
